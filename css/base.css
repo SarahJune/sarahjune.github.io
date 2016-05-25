@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,700,300italic,700italic|Italiana:200,400,700);
+
+html {
+  background: url(../img/building2.jpg) no-repeat fixed;
+  background-position: 30% 30%;
+  height: 100%;
+  width: 100%;
+  font-family: 'Lato';
+  font-weight: 100;
+}
+body {
+  margin: 0px;
+}
+header {
+  text-align: left;
+  font-variant: small-caps;
+  display: block;
+  z-index: 50;
+  padding: 20px;
+  position: fixed;
+  mix-blend-mode: exclusion;
+}
+header p {
+  color: white;
+  font-size: 50px;
+  margin: 0px;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+header a {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 0px 30px 20px 0px;
+}
+header a:hover {
+  text-decoration: underline;
+}
+nav {
+  position: fixed;
+}
+h2 {
+  font-family: 'Italiana';
+  font-weight: 200;
+  font-size: 45px;
+}
+section {
+  font-family: 'Lato';
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.quote, .about, .projects {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 200px 50px;
+}
+.quote-inside, .about-inside, .projects-inside {
+  display: block;
+  position: relative;
+  color: white;
+}
+.quote {
+  text-align: right;
+  font-family: 'Italiana';
+  font-size: 60px;
+  -webkit-clip-path: polygon(0 40%, 100% 0%, 100% 60%, 0% 100%);
+  clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
+}
+.quote-inside {
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+}
+.projects {
+  margin-top: -100px;
+  padding: 100px 50px 200px 50px;
+  -webkit-clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);
+  clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);
+}
+.projects-inside {
+  padding: 0px 100px;
+  font-size: 24px;
+  line-height: 40px
+}
+.lindy, .adc {
+  display: inline-block;
+  width: 45%;
+}
+.lindy {
+  padding: 0px 4.5% 0px 0px;
+}
+.adc {
+  padding: 0px 0% 0px 4.5%;
+}
+.projects-inside figure {
+  width: 100%;
+  float: left;
+  margin: 0px;
+}
+.lindy img, .adc img {
+  width: 100%;
+}
+.about {
+  margin-top: -100px;
+  -webkit-clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
+  clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
+}
+.about-inside {
+  padding: 0px 100px;
+  font-size: 24px;
+  line-height: 40px
+}
+.about-text img {
+  width: 250px;
+  float: right;
+  padding: 2%;
+  overflow: hidden;
+}
+figcaption {
+  font-size: 25px;
+}
