@@ -31,7 +31,7 @@ header a {
   color: white;
   font-size: 25px;
   text-decoration: none;
-  padding: 0px 30px 20px 0px;
+  padding: 0px 24px 20px 0px;
 }
 header a:hover {
   text-decoration: underline;
@@ -50,8 +50,14 @@ section {
   letter-spacing: 1px;
 }
 .quote, .about, .projects {
+  margin-top: -100px;
   background: rgba(0, 0, 0, 0.8);
+}
+.about, .projects {
   padding: 200px 50px;
+}
+.quote {
+  padding: 300px 50px;
 }
 .quote-inside, .about-inside, .projects-inside {
   display: block;
@@ -63,7 +69,7 @@ section {
   font-family: 'Italiana';
   font-size: 60px;
   -webkit-clip-path: polygon(0 40%, 100% 0%, 100% 60%, 0% 100%);
-  clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
+  clip-path: polygon(0 40%, 100% 0%, 100% 60%, 0% 100%);
 }
 .quote-inside {
   font-size: 28px;
@@ -71,7 +77,6 @@ section {
   text-align: center;
 }
 .projects {
-  margin-top: -100px;
   padding: 100px 50px 200px 50px;
   -webkit-clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);
   clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);
@@ -100,12 +105,11 @@ section {
   width: 100%;
 }
 .about {
-  margin-top: -100px;
   -webkit-clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
   clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
 }
 .about-inside {
-  padding: 0px 100px;
+  padding: 0px 200px;
   font-size: 24px;
   line-height: 40px
 }
@@ -114,6 +118,18 @@ section {
   float: right;
   padding: 2%;
   overflow: hidden;
+}
+.right-div {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100px;
+  -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 0%);
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 0%);
+}
+.left-div {
+  background: rgba(0, 0, 0, 0.8);
+  height: 200px;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 60% 0, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 60% 0, 0% 100%);
 }
 figcaption {
   font-size: 25px;
