@@ -1,4 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,700,300italic,700italic|Italiana:200,400,700);
+@import url(moz.css);
+@import url(header.css);
+@import url(carousel.css);
 
 html {
   background: url(../img/building2.jpg) no-repeat fixed;
@@ -44,17 +47,20 @@ h2 {
   font-family: 'Italiana';
   font-weight: 200;
   font-size: 45px;
+    margin: 0px;
 }
 section {
   font-family: 'Lato';
   font-weight: 300;
   letter-spacing: 1px;
 }
-.quote, .about, .projects {
+.quote, .about {
   margin-top: -100px;
+}
+.quote, .about, .projects {
   background: rgba(0, 0, 0, 0.8);
 }
-.about, .projects {
+.about {
   padding: 200px 50px;
 }
 .quote {
@@ -69,7 +75,7 @@ section {
   text-align: right;
   font-family: 'Italiana';
   font-size: 60px;
-  -webkit-clip-path: polygon(0 40%, 100% 0%, 100% 60%, 0% 100%);
+  -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 75%, 0% 100%);
   clip-path: polygon(0 40%, 100% 0%, 100% 60%, 0% 100%);
 }
 .quote-inside {
@@ -78,14 +84,14 @@ section {
   text-align: center;
 }
 .projects {
-  padding: 100px 50px 200px 50px;
+  padding: 200px 50px 250px;
   -webkit-clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);
   clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);
 }
 .projects-inside {
   padding: 0px 100px;
   font-size: 24px;
-  line-height: 40px
+  line-height: 40px;
 }
 .lindy, .adc {
   display: inline-block;
@@ -97,6 +103,9 @@ section {
 .adc {
   padding: 0px 0% 0px 4.5%;
 }
+.projects-inside h2 {
+  margin-bottom: 24px;
+}
 .projects-inside figure {
   width: 100%;
   float: left;
@@ -106,11 +115,11 @@ section {
   width: 100%;
 }
 .about {
-  -webkit-clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
+  -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 75%, 0% 100%);
   clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
 }
 .about-inside {
-  padding: 0px 200px;
+  padding: 0px 50px;
   font-size: 24px;
   line-height: 40px
 }
@@ -127,18 +136,20 @@ section {
 .about a:hover {
   text-decoration: underline;
 }
+.about img {
+  float: left;
+  width: 300px;
+  height: 300px;
+  padding-right: 20px;
+  border-radius: 50%;
+}
 .right-div {
   background: rgba(0, 0, 0, 0.8);
   height: 100px;
   -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 0%);
   clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 0%);
-}
-.left-div {
-  background: rgba(0, 0, 0, 0.8);
-  -moz-background-size: 0;
-  height: 200px;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 60% 0, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 60% 0, 0% 100%);
+  z-index: 100;
+  position: relative;
 }
 figcaption {
   font-size: 25px;
@@ -146,9 +157,24 @@ figcaption {
 .mobile-break {
   display: none;
 }
-.project-header-mobile p, .project-header-mobile a {
-  color: white;
+@-moz-document url-prefix() {
+  .project-header {
+    margin-top: -150px;
+    transform: skewY(-15deg);
+  }
+  .project-header nav, .project-header p {
+    transform: skewY(15deg);
+  }
+  .projects {
+    transform: skewY(15deg);
+    margin-top: 150px;
+    padding: 50px 50px 150px 50px;
+  }
+  .projects-inside {
+    transform: skewY(-15deg);
+  }
 }
+
 @media only screen and (max-width: 1100px) {
   .lindy, .adc {
     display: inline-block;
@@ -164,18 +190,12 @@ figcaption {
   .left-div {
     display: none;
   }
-  .project-header-mobile {
-    background: rgba(0, 0, 0, 0.8);
-    height: 125px;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 0, 0% 100%);
-    clip-path: polygon(0% 0%, 100% 0%, 60% 0, 0% 100%);
-    mix-blend-mode: unset;
-  }
-  .project-header-mobile p, .project-header-mobile a {
-    color: white;
+  .about {
+    -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 75%, 0% 100%);
+    clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 800px) {
   .mobile-break {
     display: block;
   }
@@ -185,7 +205,7 @@ figcaption {
   .projects-inside {
     padding: 0px;
   }
-  .project-header-mobile {
+  .project-header, .primary-header {
     height: 225px;
     color: gray;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 0% 100%);
@@ -193,4 +213,11 @@ figcaption {
   }
   .about-inside {
     padding: 100px 0px;
+  }
+  .about-text {
+    clear: both;
+  }
+  h2 {
+    padding-top: 25px;
+  }
 }

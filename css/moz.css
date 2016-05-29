@@ -1,0 +1,13 @@
+@-moz-document url-prefix() {
+  header {
+    margin-top: -150px;
+  }
+  .projects {
+    transform: skewY(15deg);
+    margin-top: 150px;
+    padding: 0px 50px 150px 50px;
+  }
+  .projects-inside {
+    transform: skewY(-15deg);
+  }
+}
