@@ -6,7 +6,6 @@
   }
   .carousel-inner {
     width: 75%;
-    height: 1500px;
     float: left;
     display: flex;
   }
@@ -27,8 +26,8 @@
     font-size: 100px;
     margin: 20px;
     text-decoration: none;
-  }
-  .prev-btn a, .next-btn a{
+    color: rgba(255,255,255,0.2);
+
   }
   @media screen and (max-width: 480px) {
     .carousel-outer {

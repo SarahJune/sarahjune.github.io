@@ -54,24 +54,15 @@ section {
   font-weight: 300;
   letter-spacing: 1px;
 }
-.quote, .about {
-  margin-top: -100px;
-}
 .quote, .about, .projects, .project-detail {
   background: rgba(0, 0, 0, 0.8);
-}
-.about {
-  padding: 200px 50px;
-}
-.quote {
-  padding: 300px 50px;
 }
 .quote-inside, .about-inside, .projects-inside {
   display: block;
   position: relative;
   color: white;
 }
-.quote {
+/*.quote {
   text-align: right;
   font-family: 'Italiana';
   font-size: 60px;
@@ -82,25 +73,18 @@ section {
   font-size: 28px;
   line-height: 40px;
   text-align: center;
-}
+}*/
 .projects {
-  padding: 200px;
-  -webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
-  clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);
-  text-align: center;
-}
-.project-detail {
-  padding: 200px 50px 250px;
+  padding: 200px 200px 100px 200px;
   transform: skewY(10deg);
+  margin-top: 100px;
 /*  -webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
   clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);*/
-}
-.project-detail-inside {
-  padding: 200px 50px 250px;
-  transform: skewY(-10deg);
+  text-align: center;
 }
 .projects-inside {
   font-size: 24px;
+  transform: skewY(-10deg);
   line-height: 40px;
   max-width: 1100px;
   margin: auto;
@@ -109,7 +93,6 @@ section {
   display: inline-block;
   padding: 25px 0px;
   width: 100%;
-  max-width: 1200px;
 }
 .projects-inside h2 {
   margin-bottom: 24px;
@@ -123,11 +106,27 @@ section {
 .projects div img {
   width: 100%;
 }
-.about {
-  -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 75%, 0% 100%);
-  clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
+.project-detail {
+  transform: skewY(10deg);
+  margin-top: 100px;
+/*  -webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);*/
 }
-.about-inside {
+.project-detail-inside {
+  padding: 100px 50px 150px;
+  transform: skewY(-10deg);
+}
+.about, .quote {
+  transform: skewY(-10deg);
+}
+.about {
+  padding: 175px 50px 25px 50px;
+}
+.quote {
+  padding: 200px 50px;
+}
+.about-inside, .quote-inside {
+  transform: skewY(10deg);
   padding: 0px 50px;
   font-size: 24px;
   line-height: 40px
@@ -169,55 +168,53 @@ section {
 }
 .crest {
   width: 50%;
+  align-items: center;
 }
-.crest img {
-  padding: 2%;
+.crest div {
+  width: 75%;
+  margin: auto;
 }
-@-moz-document url-prefix() {
-  .project-header {
-    margin-top: -150px;
-    transform: skewY(-15deg);
-  }
-  .project-header nav, .project-header p {
-    transform: skewY(15deg);
-  }
-  .projects {
-    transform: skewY(15deg);
-    margin-top: 150px;
-    padding: 50px 50px 150px 50px;
-  }
-  .projects-inside {
-    transform: skewY(-15deg);
-  }
+.prev-btn, .next-btn {
+  background-color: rgba(255,255,255,0.5);
+  width: 50px;
+  height: 200px;
+  -webkit-clip-path: polygon(0% 50%, 100% 0%, 100% 100%, 0% 50%);
+}
+.prev-btn, .next-btn {
+  -webkit-clip-path: polygon(0% 50%, 100% 0%, 100% 100%, 0% 50%);
+}
+.next-btn {
+  -webkit-clip-path: polygon(0% 0%, 100% 50%, 100% 50%, 0% 100%);
 }
 
 @media only screen and (max-width: 1100px) {
   .projects {
-    padding: 200px 100px;
+    padding: 100px;
   }
   .left-div {
     display: none;
   }
-  .about {
-    -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 75%, 0% 100%);
-    clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
+  .quote {
+    padding: 400px 50px;
+  }
+  .quote, .about {
+    margin-top: -100px;
+/*    -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 75%, 0% 100%);
+    clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);*/
   }
 }
 @media only screen and (max-width: 800px) {
   .mobile-break {
     display: block;
   }
+  .project-header, .primary-header {
+    height: 225px;
+  }
   .projects {
-    padding: 250px 25px;
+    padding: 200px 25px;
   }
   .projects-inside {
     padding: 0px;
-  }
-  .project-header, .primary-header {
-    height: 225px;
-    color: gray;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 0% 100%);
-    clip-path: polygon(0% 0%, 100% 0%, 60% 0, 0% 100%);
   }
   .about-inside {
     padding: 100px 0px;
