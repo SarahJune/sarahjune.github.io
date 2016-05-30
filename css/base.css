@@ -124,6 +124,7 @@ section {
 }
 .quote {
   padding: 200px 50px;
+  font-family: 'Italiana';
 }
 .about-inside, .quote-inside {
   transform: skewY(10deg);

@@ -1,10 +1,12 @@
 @-moz-document url-prefix() {
-  .project-header {
-    margin-top: -150px;
-    transform: skewY(-15deg);
+  .project-header, .primary-header {
+    transform: skewY(-10deg);
+    padding: 125px 25px 0px 20px;
   }
-  .project-header nav, .project-header p {
-    transform: skewY(15deg);
+  .project-header nav, .project-header p, .primary-header nav, .primary-header p {
+    transform: skewY(10deg);
+    margin-bottom: -50px;
+    padding: 0px;
   }
   .projects {
     transform: skewY(15deg);
@@ -13,5 +15,13 @@
   }
   .projects-inside {
     transform: skewY(-15deg);
+  }
+  .right-div {
+    transform: skewY(10deg);
+    margin-top: -100px;
+    height: 150px;
+  }
+  .quote {
+    margin-top: -50px;
   }
 }
