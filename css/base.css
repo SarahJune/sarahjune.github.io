@@ -57,7 +57,7 @@ section {
 .quote, .about {
   margin-top: -100px;
 }
-.quote, .about, .projects {
+.quote, .about, .projects, .project-detail {
   background: rgba(0, 0, 0, 0.8);
 }
 .about {
@@ -84,34 +84,43 @@ section {
   text-align: center;
 }
 .projects {
-  padding: 200px 50px 250px;
-  -webkit-clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);
+  padding: 200px;
+  -webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
   clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);
+  text-align: center;
+}
+.project-detail {
+  padding: 200px 50px 250px;
+  transform: skewY(10deg);
+/*  -webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);*/
+}
+.project-detail-inside {
+  padding: 200px 50px 250px;
+  transform: skewY(-10deg);
 }
 .projects-inside {
-  padding: 0px 100px;
   font-size: 24px;
   line-height: 40px;
+  max-width: 1100px;
+  margin: auto;
 }
-.lindy, .adc {
+.projects div {
   display: inline-block;
-  width: 45%;
-}
-.lindy {
-  padding: 0px 4.5% 0px 0px;
-}
-.adc {
-  padding: 0px 0% 0px 4.5%;
+  padding: 25px 0px;
+  width: 100%;
+  max-width: 1200px;
 }
 .projects-inside h2 {
   margin-bottom: 24px;
+  text-align: left;
 }
 .projects-inside figure {
   width: 100%;
   float: left;
   margin: 0px;
 }
-.lindy img, .adc img {
+.projects div img {
   width: 100%;
 }
 .about {
@@ -151,11 +160,18 @@ section {
   z-index: 100;
   position: relative;
 }
-figcaption {
+.projects figcaption {
   font-size: 25px;
+  text-align: left;
 }
 .mobile-break {
   display: none;
+}
+.crest {
+  width: 50%;
+}
+.crest img {
+  padding: 2%;
 }
 @-moz-document url-prefix() {
   .project-header {
@@ -176,16 +192,8 @@ figcaption {
 }
 
 @media only screen and (max-width: 1100px) {
-  .lindy, .adc {
-    display: inline-block;
-    width: 100%;
-    padding: 25px 0px;
-  }
   .projects {
-    -webkit-clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 85%);
-    clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 85%);
-    margin-top: 0px;
-    padding-top: 150px;
+    padding: 200px 100px;
   }
   .left-div {
     display: none;
@@ -200,7 +208,7 @@ figcaption {
     display: block;
   }
   .projects {
-    padding-top: 225px;
+    padding: 250px 25px;
   }
   .projects-inside {
     padding: 0px;

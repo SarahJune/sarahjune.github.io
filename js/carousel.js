@@ -12,7 +12,7 @@ $(document).ready(function() {
       e.preventDefault();
 
     });
-    $(".previous-btn").on("click", function(e){
+    $(".prev-btn").on("click", function(e){
       var currentActiveComp = $(".comp-show");
       var nextActiveComp = currentActiveComp.prev();
       if(nextActiveComp.length == 0)

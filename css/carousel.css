@@ -1,21 +1,17 @@
   .carousel-outer {
-    height: 250px;
     display: flex;
-    align-items: center;
     justify-content: center;
     max-width: 1200px;
     margin: auto;
   }
   .carousel-inner {
     width: 75%;
-    height: 250px;
+    height: 1500px;
     float: left;
     display: flex;
-    align-items: center;
   }
   .carousel-inner img {
-    width: 50%;
-    padding: 2%;
+    width: 100%;
   }
   .comp-show {
     display: inline-block;
@@ -24,13 +20,15 @@
   .comp-hide {
     display: none;
   }
-  .comp-show a, .comp-hide a, {
-    padding: 20px;
-    width: ;
-  }
-  .previous, .next {
+  .prev-btn, .next-btn {
     float: left;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 100px;
     margin: 20px;
+    text-decoration: none;
+  }
+  .prev-btn a, .next-btn a{
   }
   @media screen and (max-width: 480px) {
     .carousel-outer {
