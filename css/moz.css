@@ -1,27 +1,85 @@
 @-moz-document url-prefix() {
   .project-header, .primary-header {
-    transform: skewY(-10deg);
-    padding: 125px 25px 0px 20px;
+    position: relative;
+    height: 50px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0);
   }
-  .project-header nav, .project-header p, .primary-header nav, .primary-header p {
-    transform: skewY(10deg);
-    margin-bottom: -50px;
-    padding: 0px;
+  .project-header p, .project-header a {
+    color: black;
+  }
+  .project-header {
+    margin: 0px;
+  }
+  .projects, .project-detail {
+    transform: skewY(-10deg);
+    margin-top: 0px;
   }
   .projects {
-    transform: skewY(15deg);
-    margin-top: 150px;
-    padding: 50px 50px 150px 50px;
+    padding: 150px 50px;
   }
-  .projects-inside {
-    transform: skewY(-15deg);
+  .project-detail {
+    padding: 50px;
+  }
+  .projects-inside, .project-detail-inside {
+    transform: skewY(10deg);
   }
   .right-div {
-    transform: skewY(10deg);
-    margin-top: -100px;
-    height: 150px;
+    display:none;
   }
   .quote {
-    margin-top: -50px;
+    text-align: center;
   }
+  .about {
+    margin-top: 0px;
+    padding: 175px 50px;
+  }
+  .next-btn {
+    border-left: solid gray 25px;
+    border-right: solid transparent 25px;
+  }
+  .prev-btn {
+    border-left: solid transparent 25px;
+    border-right: solid gray 25px;
+  }
+  .prev-btn, .next-btn {
+    width: 0px;
+    height: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    border-top: solid transparent 25px;
+    border-bottom: solid transparent 25px;
+  }
+  @media only screen and (max-width: 1100px) {
+    .quote, .about {
+      margin-top: 0px;
+      padding: 200px 50px;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .project-header, .primary-header {
+      height: 175px;
+    }
+    .about {
+      padding: 0px 15px;
+    }
+    .project-detail-inside {
+      padding: 75px 15px;
+    }
+    .project-detail {
+      padding: 0px;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .carousel-outer, .carousel-inner {
+      align-items: unset;
+      height: 100%;
+    }
+    .quote {
+      padding: 50px 0px;
+    }
+    .crest div {
+      width: 100%;
+      margin: 0px auto;
+    }
 }
+
