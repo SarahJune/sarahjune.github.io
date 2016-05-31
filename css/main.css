@@ -112,11 +112,12 @@ section {
   transform: skewY(-10deg);
 }
 .about {
-  padding: 175px 50px 25px 50px;
+  padding: 175px 50px;
 }
 .quote {
   padding: 200px 50px;
   font-family: 'Italiana';
+  text-align: center;
 }
 .about-inside, .quote-inside {
   transform: skewY(10deg);
@@ -179,7 +180,6 @@ section {
 .next-btn {
   -webkit-clip-path: polygon(0% 0%, 100% 50%, 100% 50%, 0% 100%);
 }
-
 @media only screen and (max-width: 1100px) {
   .projects {
     padding: 100px;
@@ -197,6 +197,17 @@ section {
   }
 }
 @media only screen and (max-width: 800px) {
+  figure {
+    display: flex;
+    margin: 0px;
+  }
+  .about img {
+    float: left;
+    padding-right: 0px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
   .mobile-break {
     display: block;
   }
