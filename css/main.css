@@ -1,5 +1,5 @@
 html {
-  background: url(../img/building2.jpg) no-repeat fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),  url(../img/building2.jpg) no-repeat fixed;
   background-position: 30% 30%;
   height: 100%;
   width: 100%;
@@ -19,20 +19,21 @@ header {
   position: fixed;
   width: 100%;
 }
-header p {
+header a {
   color: black;
   font-size: 50px;
   margin: 0px;
-  line-height: 35px;
+  line-height: 5px;
   padding-bottom: 10px;
+  text-decoration: none;
 }
-header a {
+nav a {
   color: black;
   font-size: 25px;
   text-decoration: none;
   padding: 0px 24px 20px 0px;
 }
-header a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 h2 {
@@ -45,9 +46,6 @@ section {
   font-family: 'Lato';
   font-weight: 300;
   letter-spacing: 1px;
-}
-.quote, .about, .projects, .project-detail {
-  background: rgba(0, 0, 0, 0.8);
 }
 .quote-inside, .about-inside, .projects-inside {
   display: block;
@@ -68,7 +66,6 @@ section {
 }*/
 .projects {
   padding: 200px 200px 100px 200px;
-  transform: skewY(10deg);
   margin-top: 100px;
 /*  -webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
   clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);*/
@@ -76,7 +73,6 @@ section {
 }
 .projects-inside {
   font-size: 24px;
-  transform: skewY(-10deg);
   line-height: 40px;
   max-width: 1100px;
   margin: auto;
@@ -99,41 +95,47 @@ section {
   width: 100%;
 }
 .project-detail {
-  transform: skewY(10deg);
   margin-top: 100px;
 /*  -webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
   clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);*/
 }
 .project-detail-inside {
   padding: 100px 50px 150px;
-  transform: skewY(-10deg);
-}
-.about, .quote {
-  transform: skewY(-10deg);
 }
 .about {
-  padding: 175px 50px;
+  margin: 200px 50px;
 }
 .quote {
-  padding: 200px 50px;
+  padding: 200px 200px 0 200px;
   font-family: 'Italiana';
   text-align: center;
 }
+.quote p {
+  text-align: right;
+  font-size: 24px;
+}
+.about h2 {
+  font-size: 75px;
+  font-variant: small-caps;
+  padding-bottom: 25px;
+  padding: 10px 25px;
+}
 .about-inside, .quote-inside {
-  transform: skewY(10deg);
-  padding: 0px 50px;
   font-size: 24px;
   line-height: 40px
 }
-.about-text img {
+figure {
+  margin: 0;
+}
+.about-inside img {
   width: 250px;
   float: right;
-  padding: 2%;
-  overflow: hidden;
+  padding: 0 50px 50px 0;
 }
 .about a {
   text-decoration: none;
   color: gray;
+  font-weight: 100;
 }
 .about a:hover {
   text-decoration: underline;
@@ -142,8 +144,6 @@ section {
   float: left;
   width: 300px;
   height: 300px;
-  padding-right: 20px;
-  border-radius: 50%;
 }
 .right-div {
   background: rgba(0, 0, 0, 0.8);
