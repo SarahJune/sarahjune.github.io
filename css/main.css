@@ -61,7 +61,7 @@ h3, h4 {
 }
 #satellite {
   float: left;
-  color: black;
+  color: white;
   font-size: 10px;
   opacity: 0;
 }
@@ -77,10 +77,10 @@ h3, h4 {
   }
 }
 @-webkit-keyframes blinker {
-  40% { opacity: black; opacity: 0;}
+  40% { opacity: 0;}
   50% { color: white; opacity: 1;}
   70% { color: white; opacity: 1;}
-  80% { color: black; opacity: 0;}
+  80% { opacity: 0;}
 }
 @keyframes move
 {
@@ -224,7 +224,7 @@ br {
     clear: both;
   }
   .about {
-    padding: 150px 5px 10px 5px;
+    padding: 250px 5px 10px 5px;
   }
   html, header {
     background:
