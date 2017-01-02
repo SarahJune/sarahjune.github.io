@@ -1,4 +1,4 @@
-.project-header p, .project-header a {
+/*.project-header p, .project-header a {
   color: white;
 }
 .project-header {
@@ -12,4 +12,4 @@
   height: 125px;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 0%, 60% 0, 0% 100%);
-}
+}*/

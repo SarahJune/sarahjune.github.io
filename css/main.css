@@ -1,186 +1,203 @@
+html, header {
+  background:
+    linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
+    url(../img/space.jpg) no-repeat fixed;
+  }
 html {
-  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),  url(../img/building2.jpg) no-repeat fixed;
-  background-position: 30% 30%;
   height: 100%;
   width: 100%;
   font-family: 'Lato';
   font-weight: 300;
+  color: white;
 }
 body {
   margin: 0px;
-
 }
 header {
   text-align: left;
   font-variant: small-caps;
   display: block;
-  z-index: 50;
-  padding: 20px;
   position: fixed;
+  z-index: 50;
   width: 100%;
+  border-bottom: 1px double white;
 }
-header a {
-  color: black;
+header>p {
+  margin: 0;
+  padding: 0 10px 10px;
+  display: inline-block;
+  font-size: 50px;
+}
+header>p>a {
+  color: white;
   font-size: 50px;
   margin: 0px;
-  line-height: 5px;
-  padding-bottom: 10px;
   text-decoration: none;
+}
+nav {
+  text-align: right;
+  display: inline-block;
+  float: right;
+  padding-top: 25px;
 }
 nav a {
-  color: black;
+  color: white;
   font-size: 25px;
   text-decoration: none;
-  padding: 0px 24px 20px 0px;
+  padding: 0px 12px;
 }
 nav a:hover {
-  text-decoration: underline;
+  border-bottom: 7px solid gray;
 }
-h2 {
+h2, h3, h4 {
   font-family: 'Italiana';
   font-weight: 200;
   font-size: 45px;
-    margin: 0px;
+  margin: 0px;
 }
-section {
+#satellite {
+  float: left;
+  color: black;
+  font-size: 10px;
+}
+@-webkit-keyframes move
+{
+  from {
+    top: -20%;
+    left: 60%;
+  }
+  to {
+    top: 50%;
+    left: 100%;
+  }
+}
+@-webkit-keyframes blinker {
+  0% { color: black; }
+  20% { color: white; }
+  60% { color: white; }
+  75% { color: black; }
+}
+@keyframes move
+{
+  from {
+    top: -15%;
+    left: 60%;
+  }
+  to {
+    top: 50%;
+    left: 100%;
+  }
+}
+@keyframes blinker {
+  0% { color: black; }
+  20% { color: white; }
+  60% { color: white; }
+  75% { color: black; }
+}
+span#satellite {
+  position: fixed;
+  margin-top: 100px;
+  -webkit-animation: move 40s, blinker 2s;
+  animation: move 20s, blinker 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.quote {
   font-family: 'Lato';
   font-weight: 300;
   letter-spacing: 1px;
-}
-.quote-inside, .about-inside, .projects-inside {
   display: block;
+  padding-top: 300px;
   position: relative;
-  color: white;
-}
-/*.quote {
-  text-align: right;
   font-family: 'Italiana';
-  font-size: 60px;
-  -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 75%, 0% 100%);
-  clip-path: polygon(0 40%, 100% 0%, 100% 60%, 0% 100%);
-}
-.quote-inside {
-  font-size: 28px;
-  line-height: 40px;
   text-align: center;
-}*/
-.projects {
-  padding: 200px 200px 100px 200px;
-  margin-top: 100px;
-/*  -webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
-  clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);*/
-  text-align: center;
-}
-.projects-inside {
-  font-size: 24px;
-  line-height: 40px;
-  max-width: 1100px;
+  max-width: 600px;
   margin: auto;
-}
-.projects div {
-  display: inline-block;
-  padding: 25px 0px;
-  width: 100%;
-}
-.projects-inside h2 {
-  margin-bottom: 24px;
-  text-align: left;
-}
-.projects-inside figure {
-  width: 100%;
-  float: left;
-  margin: 0px;
-}
-.projects div img {
-  width: 100%;
-}
-.project-detail {
-  margin-top: 100px;
-/*  -webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
-  clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);*/
-}
-.project-detail-inside {
-  padding: 100px 50px 150px;
-}
-.about {
-  margin: 200px 50px;
-}
-.quote {
-  padding: 200px 200px 0 200px;
-  font-family: 'Italiana';
-  text-align: center;
 }
 .quote p {
   text-align: right;
   font-size: 24px;
 }
+.about {
+  padding: 150px 20px 10px 20px;
+  margin: auto;
+  max-width: 900px;
+}
 .about h2 {
   font-size: 75px;
   font-variant: small-caps;
-  padding-bottom: 25px;
-  padding: 10px 25px;
+  text-align: center;
 }
-.about-inside, .quote-inside {
+.about h2, .about h3, .about h4 {
+  text-align: center;
+}
+.about h3, .about h4 {
+  font-size: 18px;
+  font-variant: lowercase;
+  padding: 0 0 25px;
+}
+.about h4 {
+  padding-top: 50px;
+}
+.about p {
   font-size: 24px;
-  line-height: 40px
+  line-height: 40px;
+  margin-left: 350px;
 }
-figure {
+.about figure {
+  padding: 35px 0;
+  float: left;
   margin: 0;
 }
-.about-inside img {
-  width: 250px;
-  float: right;
-  padding: 0 50px 50px 0;
+.about img {
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+}
+.about div {
+  float: left;
+  max-width: 500px;
 }
 .about a {
   text-decoration: none;
-  color: gray;
-  font-weight: 100;
+  color: white;
+  border-bottom: 7px solid gray;
 }
 .about a:hover {
-  text-decoration: underline;
-}
-.about img {
-  float: left;
-  width: 300px;
-  height: 300px;
-}
-.right-div {
-  background: rgba(0, 0, 0, 0.8);
-  height: 100px;
-  -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 0%);
-  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 0%);
-  z-index: 100;
-  position: relative;
-}
-.projects figcaption {
-  font-size: 25px;
-  text-align: left;
+  text-decoration: none;
 }
 .mobile-break {
   display: none;
 }
-.crest {
-  width: 50%;
-  align-items: center;
+
+@media only screen and (max-width: 850px) {
+  nav {
+    float: left;
+    padding-top: 0px;
+  }
+  header>p {
+    padding-bottom: 0;
+    display: block;
+  }
 }
-.crest div {
-  width: 75%;
-  margin: auto;
+
+@media only screen and (max-width: 650px) {
+  .about figure {
+    width: 100%
+  }
+  .about img {
+    display: block;
+    margin: auto;
+
+  }
+  .about p {
+    margin: 50px;
+    display: block;
+    clear: both;
+  }
 }
-.prev-btn, .next-btn {
-  background-color: rgba(255,255,255,0.5);
-  width: 50px;
-  height: 200px;
-  -webkit-clip-path: polygon(0% 50%, 100% 0%, 100% 100%, 0% 50%);
-}
-.prev-btn, .next-btn {
-  -webkit-clip-path: polygon(0% 50%, 100% 0%, 100% 100%, 0% 50%);
-}
-.next-btn {
-  -webkit-clip-path: polygon(0% 0%, 100% 50%, 100% 50%, 0% 100%);
-}
-@media only screen and (max-width: 1100px) {
+
+/*@media only screen and (max-width: 1100px) {
   .projects {
     padding: 100px;
   }
@@ -192,11 +209,9 @@ figure {
   }
   .quote, .about {
     margin-top: -100px;
-/*    -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 75%, 0% 100%);
-    clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);*/
   }
-}
-@media only screen and (max-width: 800px) {
+}*/
+/*@media only screen and (max-width: 800px) {
   figure {
     display: flex;
     margin: 0px;
@@ -232,4 +247,4 @@ figure {
   h2 {
     padding-top: 25px;
   }
-}
+}*/
