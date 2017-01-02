@@ -1,4 +1,4 @@
-@-moz-document url-prefix() {
+/*@-moz-document url-prefix() {
   .project-header, .primary-header {
     position: relative;
     height: 50px;
@@ -82,4 +82,4 @@
       margin: 0px auto;
     }
 }
-
+*/
