@@ -24,9 +24,9 @@ header {
 }
 header>p {
   margin: 0;
-  padding: 0 10px 10px;
+  padding: 10px 15px;
   display: inline-block;
-  font-size: 50px;
+  font-size: 40px;
 }
 header>p>a {
   color: white;
@@ -36,11 +36,11 @@ nav {
   text-align: right;
   display: inline-block;
   float: right;
-  padding-top: 25px;
+  padding: 25px;
 }
 nav a {
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
   padding: 0px 12px;
 }
