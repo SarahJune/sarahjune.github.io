@@ -180,7 +180,7 @@ br {
 @media only screen and (max-width: 850px) {
   nav {
     float: left;
-    padding: 10px 0;
+    padding: 5px 0 15px;
   }
   header>p {
     padding-bottom: 0;
@@ -211,7 +211,8 @@ br {
   }
   header>p {
     font-size: 40px;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
   br {
     display: block;
