@@ -1,17 +1,18 @@
-html, header {
-  background:
-    linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
-    url(../img/space.jpg) no-repeat fixed;
-  }
+
 html {
   height: 100%;
   width: 100%;
   font-family: 'Lato';
   font-weight: 300;
-  color: white;
+  color: #262625;
+  background:
+    linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url(http://www.nakedeyeplanets.com/path-of-venus-jan-jun-2012.png) repeat-y center center;
 }
 body {
   margin: 0px;
+}
+img {
+  width: 100%;
 }
 header {
   text-align: left;
@@ -46,12 +47,6 @@ nav a {
 }
 nav a:hover {
   border-bottom: 7px solid gray;
-}
-h2 {
-  font-family: 'Italiana';
-  font-weight: 200;
-  font-size: 45px;
-  margin: 0px;
 }
 h3, h4 {
   font-family: 'Lato';
@@ -109,44 +104,37 @@ span#satellite {
 }
 .quote {
   font-family: 'Lato';
-  font-weight: 300;
+  color: #262625;
   letter-spacing: 1px;
   display: block;
-  padding: 300px 20px 20px;
   position: relative;
-  font-family: 'Italiana';
   text-align: center;
-  max-width: 600px;
-  margin: auto;
+  overflow: overlay;
 }
-.quote p {
+.quote h2 {
+  font-variant-caps: petite-caps;
+  font-size: 13vw;
+  text-align: center;
+  margin: 0;
+  line-height: 45px;
+  padding-bottom: 45px;
+  transform: scale(1.05);
+}
+.quote hr {
+  width: 50%;
+}
+.quote h3 {
   text-align: right;
   font-size: 24px;
 }
 .about {
-  padding: 150px 20px 10px 20px;
   margin: auto;
   max-width: 900px;
-}
-.about h2 {
-  font-size: 75px;
-  font-variant: small-caps;
-  text-align: center;
-}
-.about h2, .about h3, .about h4 {
-  text-align: center;
-}
-.about h3, .about h4 {
-  font-size: 18px;
-  padding: 0 0 25px;
-}
-.about h4 {
-  padding-top: 50px;
+  color: #262625;
 }
 .about p {
   font-size: 24px;
   line-height: 40px;
-  margin-left: 350px;
 }
 .about figure {
   padding: 35px 0;
@@ -170,13 +158,43 @@ span#satellite {
 .about a:hover {
   text-decoration: none;
 }
-.mobile-break {
-  display: none;
+.case-studies {
+  margin: 200px auto;
+  transition: all .2s ease-in-out;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-br {
-  display: none;
+.case-studies a {
+  color: #262625;
 }
-
+.case-studies:hover {
+  transform: scale(1.1);
+}
+.case-studies figure {
+  width: 40%;
+  padding: 0 45px;
+  border-right: 1px solid #262625;
+}
+.case-studies div {
+  width: 33%;
+  float: left;
+  padding-top: 5px;
+}
+.case-studies h3 {
+  font-weight: 600;
+  font-size: 24px;
+  font-variant-caps: all-petite-caps;
+}
+.case-studies h4 {
+  font-weight: 300;
+  font-size: 18px;
+  font-variant-caps: all-petite-caps;
+}
+.case-studies br {
+  clear: both;
+}
 @media only screen and (max-width: 850px) {
   nav {
     float: left;
@@ -187,7 +205,19 @@ br {
     display: block;
   }
 }
-
+.grid {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.grid div {
+  width: 33%;
+}
 @media only screen and (max-width: 650px) {
   .about figure {
     width: 100%
