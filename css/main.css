@@ -232,6 +232,8 @@ span#satellite {
   justify-content: center;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
+  width: 1020px;
+  margin: auto;
 }
 .grid figure {
   width: 90%;
@@ -241,20 +243,20 @@ span#satellite {
   width: 33%;
   margin-bottom: 35px;
 }
-.lightbox-lt, .lightbox-md, .lightbox-rt {
+/*.lightbox-lt, .lightbox-md, .lightbox-rt {
   transition: all .5s;
 }
 .lightbox-lt:hover {
   transform-origin: top left;
-  transform: scale(2);
+  transform: scale(1.2);
 }
 .lightbox-md:hover {
-  transform: scale(2);
+  transform: scale(1.2);
 }
 .lightbox-rt:hover {
   transform-origin: top right;
-  transform: scale(2);
-}
+  transform: scale(1.2);
+}*/
 @media only screen and (max-width: 650px) {
   .about figure {
     width: 100%
