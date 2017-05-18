@@ -6,7 +6,7 @@ html {
   font-weight: 300;
   color: #262625;
   background:
-    linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url(http://www.nakedeyeplanets.com/path-of-venus-jan-jun-2012.png) repeat-y center center;
+    linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)), url(http://www.nakedeyeplanets.com/path-of-venus-jan-jun-2012.png) repeat-y center center;
 }
 body {
   margin: 0px;
@@ -115,9 +115,7 @@ span#satellite {
   font-variant-caps: petite-caps;
   font-size: 13vw;
   text-align: center;
-  margin: 0;
-  line-height: 45px;
-  padding-bottom: 45px;
+  margin: -78px 0 -24px 0;
   transform: scale(1.05);
 }
 .quote hr {
@@ -128,9 +126,11 @@ span#satellite {
   font-size: 24px;
 }
 .about {
-  margin: auto;
-  max-width: 900px;
+  margin: 100px auto;
+  max-width: 650px;
   color: #262625;
+  font-weight: 300;
+  -webkit-font-smoothing: auto;
 }
 .about p {
   font-size: 24px;
@@ -158,14 +158,33 @@ span#satellite {
 .about a:hover {
   text-decoration: none;
 }
-.case-studies {
+.cs {
   margin: 200px 0;
+}
+.cs h2 {
+  font-size: 13vw;
+  margin-bottom: -40px;
+  z-index: 1;
+}
+.cs-header {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+.cs1 {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+.case-studies {
+  background: white;
   transition: all .2s ease-in-out;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   padding: 50px;
-  box-shadow: 0px 0px 16px #eeeeee;
+  /*box-shadow: 0px 0px 16px #eeeeee;*/
+  z-index: 99;
+  position: relative;
 }
 .case-studies button {
   border: 1px solid #262625;
@@ -189,7 +208,7 @@ span#satellite {
   padding: 0 45px;
   /*border-right: 1px solid #262625;*/
 }
-.case-studies div {
+.case-studies .cs_detail {
   width: 33%;
   float: left;
   padding-top: 5px;
@@ -223,7 +242,9 @@ span#satellite {
     display: block;
   }
 }
-.grid {
+.grid_inner {
+  background: white;
+  padding: 50px;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -234,13 +255,15 @@ span#satellite {
   flex-flow: row wrap;
   width: 1020px;
   margin: auto;
+  position: relative;
+  z-index: 99;
 }
-.grid figure {
+.grid_inner figure {
   width: 90%;
   margin: auto;
 }
-.grid div {
-  width: 33%;
+.grid_inner div {
+  width: 50%;
   margin-bottom: 35px;
 }
 /*.lightbox-lt, .lightbox-md, .lightbox-rt {
