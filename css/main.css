@@ -5,8 +5,8 @@ html {
   font-family: 'Lato';
   font-weight: 300;
   color: #262625;
-  background:
-    linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)), url(http://www.nakedeyeplanets.com/path-of-venus-jan-jun-2012.png) repeat-y center center;
+  /*background:
+    linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('http://www.nakedeyeplanets.com/path-of-venus-jan-jun-2012.png') repeat-y center center;*/
 }
 body {
   margin: 0px;
@@ -15,126 +15,51 @@ img {
   width: 100%;
 }
 header {
-  text-align: left;
-  font-variant: small-caps;
-  display: block;
-  position: fixed;
-  z-index: 50;
-  width: 100%;
-  border-bottom: 1px double white;
+  overflow: hidden;
 }
-header>p {
+h2 {
+  color: #EE6C4D;
+  font-weight: 300;
   margin: 0;
-  padding: 10px 15px;
-  display: inline-block;
-  font-size: 40px;
-}
-header>p>a {
-  color: white;
-  text-decoration: none;
-}
-nav {
-  text-align: right;
-  display: inline-block;
-  float: right;
-  padding: 25px;
-}
-nav a {
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 0px 12px;
-}
-nav a:hover {
-  border-bottom: 7px solid gray;
+  font-size: 11vw;
+  font-variant: all-small-caps;
+  text-align: center;
 }
 h3, h4 {
-  font-family: 'Lato';
-  font-weight: 300;
-  font-size: 45px;
-  margin: 0px;
+  margin: 0;
 }
-#satellite {
-  float: left;
-  color: white;
-  font-size: 10px;
-  opacity: 0;
-}
-@-webkit-keyframes move
-{
-  from {
-    top: -15%;
-    left: 60%;
-  }
-  to {
-    top: 50%;
-    left: 100%;
-  }
-}
-@-webkit-keyframes blinker {
-  40% { opacity: 0;}
-  50% { color: white; opacity: 1;}
-  70% { color: white; opacity: 1;}
-  80% { opacity: 0;}
-}
-@keyframes move
-{
-  from {
-    top: -15%;
-    left: 60%;
-  }
-  to {
-    top: 50%;
-    left: 100%;
-  }
-}
-@keyframes blinker {
-  40% { color: black; opacity: 0;}
-  50% { color: white; opacity: 1;}
-  70% { color: white; opacity: 1;}
-  80% { color: black; opacity: 0;}
-}
-span#satellite {
-  position: fixed;
-  margin-top: 100px;
-  -webkit-animation: move 40s, blinker 1.5s;
-  animation: move 20s, blinker 2.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-.quote {
-  font-family: 'Lato';
-  color: #262625;
-  letter-spacing: 1px;
+.callout {
+  color: #50514F;
+  z-index: 1;
+  margin: 0;
+  z-index: 100;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  background: white;
   display: block;
-  position: relative;
-  text-align: center;
-  overflow: overlay;
 }
-.quote h2 {
-  font-variant-caps: petite-caps;
-  font-size: 13vw;
-  text-align: center;
-  margin: -78px 0 -24px 0;
-  transform: scale(1.05);
+.outer {
+  box-shadow: 0px -5px 8px #eeeeee;
+  width: 80%;
+  margin: auto;
 }
-.quote hr {
-  width: 50%;
-}
-.quote h3 {
-  text-align: right;
-  font-size: 24px;
-}
-.about {
-  margin: 100px auto;
-  max-width: 650px;
+.details {
+  padding: 100px;
+  margin: auto;
   color: #262625;
   font-weight: 300;
+  transform: scale(1.1,1);
+  font-size: 18px;
+  line-height: 36px;
   -webkit-font-smoothing: auto;
+  background-color: white;
+  margin-bottom: 36px;
 }
 .about p {
-  font-size: 24px;
-  line-height: 40px;
+  max-width: 600px;
+  margin: auto;
+  padding-bottom: 36px;
 }
 .about figure {
   padding: 35px 0;
@@ -158,89 +83,63 @@ span#satellite {
 .about a:hover {
   text-decoration: none;
 }
-.cs {
-  margin: 200px 0;
-}
-.cs h2 {
-  font-size: 13vw;
-  margin-bottom: -40px;
-  z-index: 1;
-}
-.cs-header {
-  z-index: 1;
-  position: relative;
-  overflow: hidden;
-}
-.cs1 {
+.case-study {
   display: flex;
   justify-content: space-around;
   text-align: left;
-}
-.case-studies {
   background: white;
   transition: all .2s ease-in-out;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 50px;
   /*box-shadow: 0px 0px 16px #eeeeee;*/
   z-index: 99;
   position: relative;
 }
-.case-studies button {
+.case-study button {
   border: 1px solid #262625;
   padding: 16px;
-  margin: 48px 0 0 0;
+  margin: 24px 0 0 0;
   font-size: 16px;
   background-color: transparent;
   font-family: 'Lato';
   font-weight: 300;
   color: #262625;
 }
-.case-studies a {
+.case-study a {
   color: #262625;
   text-decoration: none;
 }
-/*.case-studies:hover {
+/*.case-study:hover {
   transform: scale(1.1);
 }*/
-.case-studies figure {
-  width: 33%;
-  padding: 0 45px;
+.case-study figure {
+  width: 50%;
   /*border-right: 1px solid #262625;*/
 }
-.case-studies .cs_detail {
-  width: 33%;
+.case-study .cs_detail {
   float: left;
   padding-top: 5px;
 }
-.case-studies h3 {
+.case-study h3 {
   font-weight: 600;
   font-size: 24px;
   font-variant-caps: all-petite-caps;
 }
-.case-studies h4 {
+.case-study h4 {
   font-weight: 300;
   font-size: 18px;
   font-variant-caps: all-petite-caps;
   margin-bottom: 24px;
 }
-.case-studies p {
+.case-study p {
   font-size: 14px;
   margin: 0;
   line-height: 24px;
 }
-.case-studies br {
+.case-study br {
   clear: both;
-}
-@media only screen and (max-width: 850px) {
-  nav {
-    float: left;
-    padding: 5px 0 15px;
-  }
-  header>p {
-    padding-bottom: 0;
-    display: block;
-  }
 }
 .grid_inner {
   background: white;
@@ -263,7 +162,7 @@ span#satellite {
   margin: auto;
 }
 .grid_inner div {
-  width: 50%;
+  width: 25%;
   margin-bottom: 35px;
 }
 /*.lightbox-lt, .lightbox-md, .lightbox-rt {
@@ -280,6 +179,17 @@ span#satellite {
   transform-origin: top right;
   transform: scale(1.2);
 }*/
+
+/*@media only screen and (max-width: 850px) {
+  nav {
+    float: left;
+    padding: 5px 0 15px;
+  }
+  header>p {
+    padding-bottom: 0;
+    display: block;
+  }
+}
 @media only screen and (max-width: 650px) {
   .about figure {
     width: 100%
@@ -325,4 +235,4 @@ span#satellite {
       url(../img/space.jpg) repeat-y fixed;
     }
   }
-}
+}*/
