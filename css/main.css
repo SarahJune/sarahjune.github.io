@@ -5,10 +5,14 @@ html {
   font-family: 'Lato';
   font-weight: 300;
   color: #262625;
+  overflow: hidden;
+  height: 100%;
   /*background:
     linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('http://www.nakedeyeplanets.com/path-of-venus-jan-jun-2012.png') repeat-y center center;*/
 }
 body {
+  height: 100%;
+  overflow: auto;
   margin: 0px;
 }
 main {
@@ -50,8 +54,8 @@ header h1 {
   color: #262626;
   font-weight: 300;
   margin: 0;
-  font-size: 4vw;
-  line-height: 3vw;
+  font-size: 3em;
+  line-height: 1em;
   font-variant: all-small-caps;
   text-align: center;
 }
@@ -60,11 +64,11 @@ header h3 {
   z-index: 1;
   margin: 0;
   z-index: 100;
-  font-size: 2vw;
+  font-size: 1.5em;
+  font-size: 1.5em;
   font-weight: 700;
-  line-height: 1vw;
   text-align: center;
-  margin: 24px;
+  margin-bottom: .6em;
 }
 nav {
   display: inline-block;
@@ -72,7 +76,7 @@ nav {
 .social {
   text-align: center;
   margin: auto;
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -81,8 +85,8 @@ nav {
   border: 2px solid black;
   border-radius: 25%;
   width: 15px;
-  padding: 5px;
-  margin: 10px;
+  padding: 4px;
+  margin: 4px;
 }
 .social img:hover {
   border: 2px solid #EE6C4D;
@@ -180,26 +184,22 @@ h3, h4 {
 .case-study .cs_detail {
   float: left;
 }
-.case-study h3 {
+.cs_detail h3 {
   font-weight: 600;
   font-size: 24px;
   line-height: 24px;
-  font-variant-caps: all-petite-caps;
-}
-.case-study h4 {
-  font-weight: 300;
-  font-size: 18px;
   font-variant: all-small-caps;
-  line-height: 18px;
+}
+.cs_detail h4 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
   margin-bottom: 24px;
 }
-.case-study p {
+.cs_detail p {
   font-size: 14px;
   margin: 0;
   line-height: 24px;
-}
-.case-study br {
-  clear: both;
 }
 .grid_inner {
   display: -webkit-flex;
@@ -217,8 +217,17 @@ h3, h4 {
   width: 100%;
   margin: auto;
 }
-.grid_inner div {
+.grid_inner .image {
   width: 49%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  background: rgba(255, 255, 255, 0.9);
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 /*.lightbox-lt, .lightbox-md, .lightbox-rt {
   transition: all .5s;
