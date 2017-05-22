@@ -85,10 +85,11 @@ nav {
   margin: 10px;
 }
 .social img:hover {
-  border: 2px solid EE6C4D;
+  border: 2px solid #EE6C4D;
 }
 section {
   margin: 90px 72px;
+  padding-top: 1px;
 }
 section h2 {
   color: #373F51;
