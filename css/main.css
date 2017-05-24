@@ -18,7 +18,7 @@ body {
 main {
   box-shadow: -5px 0px 8px #dddddd;
   float: right;
-  width: 65%;
+  width: 75%;
   margin-left: 75px;
   position: relative;
   z-index: 99;
@@ -28,7 +28,7 @@ img {
 }
 header {
   overflow: hidden;
-  width: 35%;
+  width: 25%;
   margin: auto;
   position: fixed;
   float: left;
@@ -210,18 +210,23 @@ h3, h4 {
   justify-content: space-between;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
   position: relative;
   z-index: 99;
 }
 .grid_inner figure {
   width: 100%;
   margin: auto;
+  display: flex;
+  align-items: flex-end;
 }
 .grid_inner .image {
   width: 49%;
   display: block;
   position: relative;
   overflow: hidden;
+  margin-bottom: 2%;
 }
 .overlay {
   background: rgba(255, 255, 255, 0.9);

@@ -4,13 +4,15 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Sarah June Fischer</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/base.css">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Sarah June Fischer</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/base.css">
+      <link rel="stylesheet" href="css/baguetteBox.min.css">
+      <script src="js/baguetteBox.min.js" async></script>
+      <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
     <body>
       <!-- <header>
@@ -63,42 +65,50 @@
         <section>
           <h2>design</h2>
           <div class="outer">
-            <article class="details grid_inner">
+            <article class="details grid_inner gallery">
               <div class="image">
-                <figure class="lightbox-lt">
-                  <img src="img/business-cards.png">
-                  <div class="overlay cs_detail">
-                    <h3>Business Cards</h3>
-                    <h4>Code Fellows | Print</h4>
-                  </div>
-                </figure>
+                <a href="img/business-cards-lg.png">
+                  <figure>
+                    <img src="img/business-cards.png">
+                    <!-- <div class="overlay cs_detail">
+                      <h3>Business Cards</h3>
+                      <h4>Code Fellows | Print</h4>
+                    </div> -->
+                  </figure>
+                </a>
               </div>
               <div class="image">
-                <figure class="lightbox-md">
+                <a href="img/portfolio-poster-lg.png">
+                <figure>
                   <img src="img/portfolio-poster.png">
                 </figure>
-                <div class="overlay cs_detail">
+              </a>
+                <!-- <div class="overlay cs_detail">
                   <h3>Poster</h3>
                   <h4>Code Fellows | Print</h4>
-                </div>
+                </div> -->
               </div>
               <div class="image">
-                <figure class="lightbox-rt">
+                <a href="img/thermostat-lg.png">
+                <figure>
                   <img src="img/thermostat.png">
                 </figure>
-                <div class="overlay cs_detail">
+              </a>
+                <!-- <div class="overlay cs_detail">
                   <h3>Thermostat</h3>
                   <h4>Personal | Illustration</h4>
-                </div>
+                </div> -->
               </div>
               <div class="image">
-                <figure class="lightbox">
+                <a href="img/portfolio-lindy-lg.png">
+                <figure>
                   <img src="img/portfolio-lindy.png">
                 </figure>
-                <div class="overlay cs_detail">
+              </a>
+                <!-- <div class="overlay cs_detail">
                   <h3>Personal Website</h3>
                   <h4>Colleague | Web Design / Development</h4>
-                </div>
+                </div> -->
               </div>
             </article>
           </div>
@@ -115,4 +125,7 @@
         </section>
       </main>
     </body>
+    <script>
+      baguetteBox.run('.gallery');
+    </script>
 </html>
