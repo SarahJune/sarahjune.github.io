@@ -201,6 +201,21 @@ h3, h4 {
   margin: 0;
   line-height: 24px;
 }
+.case-study-full figure {
+  width: 50%;
+}
+.case-study-full .img_left {
+  float: left;
+  margin: 0px 24px 24px 0;
+}
+.case-study-full .img_center {
+  margin: 24px auto;
+}
+.case-study-full figcaption {
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+}
 .grid_inner {
   display: -webkit-flex;
   display: flex;
