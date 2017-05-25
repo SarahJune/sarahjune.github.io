@@ -7,8 +7,6 @@ html {
   color: #262625;
   overflow: hidden;
   height: 100%;
-  /*background:
-    linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('http://www.nakedeyeplanets.com/path-of-venus-jan-jun-2012.png') repeat-y center center;*/
 }
 body {
   height: 100%;
@@ -37,69 +35,75 @@ header {
   justify-content: center;
   height: 100%;
   background:
-    linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.8)), url('http://www.nakedeyeplanets.com/path-of-venus-jan-jun-2012.png') repeat-y center center;
+    linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('../img/map.jpg') no-repeat center center;
+  background-size: cover;
 }
 .headshot {
   margin: auto;
-  width: 40%;
 }
 .headshot img {
-  border-radius: 50%;
   width: 100%;
   margin: auto;
   text-align: center;
+  margin-bottom: 12px;
   box-shadow: 0px 5px 16px #dddddd;
 }
 header h1 {
   color: #262626;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
   font-size: 3em;
-  line-height: 1em;
+  line-height: .8em;
   font-variant: all-small-caps;
-  text-align: center;
+}
+header h1 a {
+  text-decoration: none;
+  color: #262626;
 }
 header h3 {
   color: #58A4B0;
   z-index: 1;
-  margin: 0;
   z-index: 100;
   font-size: 1.5em;
-  font-size: 1.5em;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: .6em;
+  line-height: 1em;
+  font-weight: 300;
+  margin: .6em 0;
 }
 nav {
   display: inline-block;
+  width: 65%;
+  margin: auto;
 }
 .social {
   text-align: center;
   margin: auto;
-  width: 30%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 }
 .social img {
-  border: 2px solid black;
-  border-radius: 25%;
+  border: 1px solid black;
   width: 15px;
   padding: 4px;
-  margin: 4px;
+  margin: 4px 8px 4px 0;
 }
 .social img:hover {
   border: 2px solid #EE6C4D;
+  margin: 3px 7px 3px -1px;
 }
 section {
-  margin: 90px 72px;
+  margin: 0px 72px 90px 72px;
   padding-top: 1px;
+}
+section:last-child {
+  margin-bottom: 150px;
 }
 section h2 {
   color: #373F51;
   font-weight: 300;
   margin: 48px 0;
-  font-size: 4vw;
+  font-size: 4em;
   font-variant: all-small-caps;
   text-align: left;
   border-bottom: 1px solid lightgray;
@@ -115,16 +119,16 @@ h3, h4 {
   margin: auto;
   color: #262625;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.25em;
   line-height: 36px;
   -webkit-font-smoothing: auto;
   background-color: white;
   margin-bottom: 36px;
 }
 .about p {
-  max-width: 600px;
   margin: auto;
   padding-bottom: 36px;
+  font-size: 1em;
 }
 .about figure {
   padding: 35px 0;
@@ -141,16 +145,12 @@ h3, h4 {
   max-width: 500px;
 }
 .about a {
-  text-decoration: none;
-  color: white;
-  border-bottom: 7px solid gray;
+  text-decoration: underline;
+  color: #262626
 }
-.about a:hover {
-  text-decoration: none;
-}
-.case-study {
+.cs-preview {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: left;
   background: white;
   transition: all .2s ease-in-out;
@@ -158,63 +158,69 @@ h3, h4 {
   z-index: 99;
   position: relative;
 }
-.case-study button {
+.cs-preview button {
   border: 1px solid #262625;
   padding: 12px 16px 16px 16px;
   margin: 24px 0;
-  font-size: 18px;
+  font-size: 1.25em;
   background-color: transparent;
   font-family: 'Lato';
   font-weight: 300;
   color: #262625;
   font-variant: all-small-caps;
 }
-.case-study a {
+.cs-preview a {
   color: #262625;
   text-decoration: none;
 }
-/*.case-study:hover {
+/*.cs-preview:hover {
   transform: scale(1.1);
 }*/
-.case-study figure {
+.cs-preview figure {
   width: 50%;
   margin-left: 0;
   /*border-right: 1px solid #262625;*/
 }
-.case-study .cs_detail {
+.cs-preview .cs-detail {
   float: left;
 }
-.cs_detail h3 {
+.cs-detail h3 {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 1.5em;
+  line-height: 1.5em;
   font-variant: all-small-caps;
 }
-.cs_detail h4 {
+.cs-detail h4 {
   font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 24px;
+  font-size: .8em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
 }
-.cs_detail p {
-  font-size: 14px;
+.cs-detail p {
+  font-size: .8em;
   margin: 0;
   line-height: 24px;
 }
-.case-study-full figure {
-  width: 50%;
+.cs-full {
+  margin-top: 0;
 }
-.case-study-full .img_left {
+.cs-full img {
+  box-shadow: 0px 5px 16px #dddddd;
+}
+.cs-full .img_left {
   float: left;
   margin: 0px 24px 24px 0;
+  width: 50%;
 }
-.case-study-full .img_center {
+.cs-full .img_center {
   margin: 24px auto;
+  width: 100%;
+  max-width: 650px;
 }
-.case-study-full figcaption {
+.cs-full figcaption {
   text-align: center;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: .7em;
+  line-height: 1em;
 }
 .grid_inner {
   display: -webkit-flex;
@@ -249,74 +255,81 @@ h3, h4 {
   position: absolute;
   width: 100%;
 }
-/*.lightbox-lt, .lightbox-md, .lightbox-rt {
-  transition: all .5s;
-}
-.lightbox-lt:hover {
-  transform-origin: top left;
-  transform: scale(1.2);
-}
-.lightbox-md:hover {
-  transform: scale(1.2);
-}
-.lightbox-rt:hover {
-  transform-origin: top right;
-  transform: scale(1.2);
-}*/
 
-/*@media only screen and (max-width: 850px) {
-  nav {
-    float: left;
-    padding: 5px 0 15px;
-  }
-  header>p {
-    padding-bottom: 0;
-    display: block;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .about figure {
-    width: 100%
-  }
-  .about img {
-    display: block;
-    margin: auto;
-
-  }
-  .about p {
-    margin: 50px;
-    display: block;
+@media only screen and (max-width: 810px) {
+  header {
+    width: 100%;
+    position: relative;
     clear: both;
+    height: auto;
+    background:
+      linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('../img/map.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  header nav {
+    display: flex;
+    -webkit-display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  header .headshot {
+    margin: 24px;
+    width: 50%;
+  }
+  header .headshot img {
+    margin-bottom: 0;
+  }
+  header br {
+    display: none;
+  }
+  header .mobile {
+    width: 50%;
+    float: left;
+    margin: auto;
+  }
+  section {
+    margin: 48px 36px;
+  }
+  main {
+    clear: both;
+    width: 100%;
+    margin: 0;
+  }
+  .social img {
+    width: 25px;
+    padding: 4px;
+    margin: 10px 20px 10px 0px;
+  }
+  .social img:hover {
+  margin: 9px 19px 9px -1px;
+  }
+  .cs-full h2 {
+    font-size: 3em;
   }
 }
 
-@media screen and (max-width: 480px) {
-  header, header>p, header nav {
-    text-align: center;
+@media only screen and (max-width: 600px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+  nav {
     width: 100%;
   }
-  header>p {
-    font-size: 40px;
-    padding-left: 0;
-    padding-right: 0;
+  .social img{
+    width: 20px;
   }
-  br {
-    display: block;
+  .cs-preview {
+    display: inline-block;
   }
-  nav {
-    margin: 10px 0 20px;
+  .cs-preview figure {
+    width: 100%;
   }
-  nav a {
-    font-size: 22px;
+  .cs-full .img_left, .cs-full .img_center {
     clear: both;
+    margin: 24px auto;
+    width: 100%;
   }
-  .about {
-    padding: 250px 5px 10px 5px;
-  }
-  html, header {
-    background:
-      linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
-      url(../img/space.jpg) repeat-y fixed;
-    }
-  }
-}*/
+
+}
