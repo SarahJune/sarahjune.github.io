@@ -5,7 +5,7 @@ html {
   font-family: 'Lato';
   font-weight: 300;
   color: #262625;
-  overflow: hidden;
+  overflow: scroll;
   height: 100%;
 }
 body {
@@ -292,6 +292,9 @@ h3, h4 {
   section {
     margin: 48px 36px;
   }
+  section h2 {
+    font-size: 3em;
+  }
   main {
     clear: both;
     width: 100%;
@@ -316,7 +319,7 @@ h3, h4 {
   nav {
     width: 100%;
   }
-  .social img{
+  .social img {
     width: 20px;
   }
   .cs-preview {
