@@ -17,11 +17,11 @@
       <header>
         <nav>
           <figure class="headshot">
-            <img src="../../img/headshot-pro.jpg">
+            <a href="/"><img src="../../img/headshot-pro.jpg"></a>
           </figure>
           <div class="mobile">
             <h1><a href="/">sarah <br/>june <br/>fischer</a></h1>
-            <h3>UX / UI Design</h3>
+            <h3><a href="/">UX / UI Design</a></h3>
             <div class="social">
               <a href="https://twitter.com/sarah_june12" target="_blank"><img src="../../img/twitter.png"></a>
               <a href="https://www.linkedin.com/in/sarahjunefischer/" target="_blank"><img src="../../img/linkedin.png"></a>
@@ -32,6 +32,8 @@
         </nav>
       </header>
       <main>
+        <span id="close"></span>
+        <span class="return"><a href="case-studies/code-fellows-homepage/">Return to top</a></span>
         <section class="cs-full">
           <h2>case&nbsp;studies | Homepage Redesign</h2>
           <div class="outer">
@@ -42,15 +44,19 @@
                 </figure> -->
                 <h3>Code Fellows | Website</h3>
                 <p>As my company’s website/content manager turned UX designer, I’m constantly iterating on our website. In summer 2016, it was time for a revamp of the homepage, which meant diving into React code and putting my web coding skills to good use.</p>
-                <figure class="img_left">
-                  <img src="../../img/cs1-original-hp.png">
-                  <figcaption>Ye Olde Homepage</figcaption>
+                <figure class="img-left">
+                <figcaption>The Final Product</figcaption>
+                  <img src="../../img/new-homepage.png">
                 </figure>
                 <h4>Goals</h4>
                 <p>The purpose of the website homepage is to introduce newcomers to Code Fellows’ immersive training program. It needs to tell our story and quickly answer the most common customer questions, from financing options to proof of student success.</p>
                 <p>The overall goal was to restructure the homepage in a way that answers the most common customer questions and provides a clear picture of Code Fellows’ business.</p>
                 <h4>Researching</h4>
                 <p>I had some gut instincts on what content the homepage needed, which was sometimes confirmed, sometimes disproven in my research phase.</p>
+                <figure class="img-left">
+                <figcaption>Ye Olde Homepage</figcaption>
+                  <img src="../../img/cs1-original-hp.png">
+                </figure>
                 <h4>Stakeholder Interviews</h4>
                 <p>My primary stakeholder was the Admission department, since they are the ones responding to questions not answered well enough by the website. With only three people on that team, minimizing incoming questions is paramount. The key questions and what they unearthed were:</p>
                 <ol>
@@ -65,9 +71,9 @@
                   <li>Stats and testimonials of our students’ success in the bootcamp and in the tech industry</li>
                   <li>Companies who have hired our graduates</li>
                 </ol>
-                <figure class="img_left">
+                <figure class="img-right">
+                <figcaption>Wireframing in Google Spreadsheets</figcaption>
                   <img src="../../img/wireframe.png">
-                  <figcaption>Wireframing in Google Spreadsheets</figcaption>
                 </figure>
                 <h4>Wireframing</h4>
                 <p>I’m hopeful this is the only time in my career when I will use Google Spreadsheets (yep, you read that right) as a wireframing tool.</p>
@@ -77,9 +83,9 @@
                   <li>A place where sections could be reordered, added, deleted, resized, hyperlinked, etc.</li>
                 </ol>
                 <p>These were important when it came to prototyping.</p>
-                <figure class="img_left">
-                  <img src="../../img/q-and-a.png">
+                <figure class="img-left">
                   <figcaption>Final prototype, demonstrating what top customer questions the homepage will answer.</figcaption>
+                  <img src="../../img/q-and-a.png">
                 </figure>
                 <h4>Prototyping</h4>
                 <p>As chief designer and developer for this project, my designs were slightly limited by my coding skills. This kept the project from ballooning in scope (I had to stay within the bounds of my own coding ability) but also challenged me to improve my technical skill set.</p>
@@ -94,24 +100,24 @@
                   <li>Designs can be iterated on if necessary, rather than shoe-horning a design into place even if it no longer makes sense.</li>
                 </ol>
                 <p>One example of the tech not supporting the design was when I realized the limitations for sliders in our current system. I wanted to have rectangular partner logos stacked, and square logos on their own, to achieve a clean grid:</p>
-                <figure class="img_center">
+                <figure class="img-center">
+                <figcaption>Prototype</figcaption>
                   <img src="../../img/slider-prototype.png">
-                  <figcaption>Prototype</figcaption>
                 </figure>
                 <p>This ended up being harder to implement than I thought, and I had to settle for single-file logos (and am about ready to nix the sliders entirely—more on this later):</p>
-                <figure class="img_center">
+                <figure class="img-center">
+                <figcaption>Final</figcaption>
                   <img src="../../img/slider-final.png">
-                  <figcaption>Final</figcaption>
                 </figure>
                 <p>One example of iterating on the design later in the process was moving the Learn More link in the Stats section:</p>
-                <figure class="img_center">
-                  <img src="../../img/stats-prototype.png">
+                <figure class="img-center">
                   <figcaption>Prototype</figcaption>
+                  <img src="../../img/stats-prototype.png">
                 </figure>
                 <p>Instead of below the section, which made it feel like it was floating, I moved the link to be beside the subject heading. That simple change (plus more whitespace) cleans up the section:</p>
-                <figure class="img_center">
-                  <img src="../../img/stats-final.png">
+                <figure class="img-center">
                   <figcaption>Final</figcaption>
+                  <img src="../../img/stats-final.png">
                 </figure>
                 <h4>Testing</h4>
                 <p>I also got to play QA for this project, testing the new homepage in various window widths, devices, and browsers. This helped to highlight unforeseen issues, such as the button width on mobile screens. My quick check for mobile styles as I’m coding is to size the desktop browser window as small as possible. Chrome (my browser of choice) reduces to 400px wide, while Firefox goes all the way down to 355px. At 400px, the buttons in the financing section looked great, but going down just 45px revealed some margin and sizing issues. I have enough CSS experience to know how to account and prepare for various screen sizes, but there’s always at least one unexpected behavior that takes me back to the code.</p>
@@ -129,4 +135,11 @@
         </section>
       </main>
     </body>
+    <script>
+      window.onload = function(){
+        document.getElementById('close').onclick = function(){
+          document.getElementsByTagName('main')[0].classList.toggle("full");
+        };
+      };
+    </script>
 </html>

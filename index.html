@@ -16,11 +16,11 @@
       <header>
         <nav>
           <figure class="headshot">
-            <img src="img/headshot-pro.jpg">
+            <a href="/"><img src="img/headshot-pro.jpg"></a>
           </figure>
           <div class="mobile">
             <h1><a href="/">sarah <br/>june <br/>fischer</a></h1>
-            <h3>UX / UI Design</h3>
+            <h3><a href="/">UX / UI Design</a></h3>
             <div class="social">
               <a href="https://twitter.com/sarah_june12" target="_blank"><img src="img/twitter.png"></a>
               <a href="https://www.linkedin.com/in/sarahjunefischer/" target="_blank"><img src="img/linkedin.png"></a>
@@ -31,6 +31,7 @@
         </nav>
       </header>
       <main>
+        <span id="close"></span>
         <section>
           <h2>case&nbsp;studies</h2>
           <div class="outer">
@@ -103,5 +104,12 @@
         noScrollBars: 'true',
       });
       // Image preview credit: https://feimosi.github.io/baguetteBox.js/
+    </script>
+    <script>
+      window.onload = function(){
+        document.getElementById('close').onclick = function(){
+          document.getElementsByTagName('main')[0].classList.toggle("full");
+        };
+      };
     </script>
 </html>
