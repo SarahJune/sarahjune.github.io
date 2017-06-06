@@ -31,9 +31,9 @@ span::before {
   content: '«';
   z-index: 99;
   float: left;
-  padding: 20px;
-  margin-left: -60px;
-  font-weight: 700;
+  padding: 10px;
+  margin-left: -45px;
+  font-weight: 400;
   color: #58A4B0;
   font-size: 24px;
   transition: all .5s ease-in-out;
@@ -44,8 +44,8 @@ span::before {
   width: 100%;
 }
 .full span::before {
-  margin-left: 10px;
-  content: '»';
+  margin-left: 5px;
+  transform: rotate(-180deg);
 }
 img {
   width: 100%;
@@ -62,6 +62,7 @@ header {
   height: 100%;
   background:
     linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('../img/map.jpg') no-repeat center center;
+  background-size: cover;
 }
 .headshot {
   margin: auto;
@@ -100,6 +101,7 @@ nav {
   display: inline-block;
   width: 65%;
   margin: auto;
+  max-width: 250px;
 }
 .social {
   text-align: center;
@@ -138,10 +140,10 @@ section h2 {
 h3, h4 {
   margin: 0;
 }
-/*.outer {
-  width: 80%;
+.outer {
+  max-width: 1000px;
   margin: auto;
-}*/
+}
 .details {
   margin: auto;
   color: #262625;
@@ -263,7 +265,7 @@ h3, h4 {
 .cs-full figcaption {
   font-size: .7em;
   line-height: 1.5em;
-  margin: 12px;
+  margin: 12px 0;
 }
 .grid_inner {
   display: -webkit-flex;
@@ -319,6 +321,7 @@ h3, h4 {
     justify-content: space-around;
     -webkit-align-items: center;
     align-items: center;
+    max-width: 810px;
   }
   header .headshot {
     margin: 18px;
