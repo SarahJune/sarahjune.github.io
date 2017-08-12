@@ -196,6 +196,7 @@ h3, h4 {
   align-items: center;
   z-index: 99;
   position: relative;
+  margin-bottom: 100px;
 }
 .cs-preview button {
   border: 1px solid #262625;
@@ -207,6 +208,10 @@ h3, h4 {
   font-weight: 300;
   color: #262625;
   font-variant: all-small-caps;
+}
+.cs-preview button:hover {
+  border: 2px solid #EE6C4D;
+  margin: 23px -1px;
 }
 .cs-preview a {
   color: #262625;
@@ -293,6 +298,7 @@ h3, h4 {
   position: relative;
   overflow: hidden;
   margin-bottom: 2%;
+  box-shadow: 0 0 15px 1px #eee;
 }
 .overlay {
   background: rgba(255, 255, 255, 0.9);
