@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Sarah June Fischer</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../../css/base.css">
+      <link rel="stylesheet" href="../../css/baguetteBox.min.css">
+      <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,700italic" rel='stylesheet' type='text/css'>
+
+      <script src="../../js/baguetteBox.min.js" async></script>
+      <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+      <header>
+        <nav>
+          <figure class="headshot">
+            <a href="/"><img src="../../img/headshot-pro.jpg"></a>
+          </figure>
+          <div class="mobile">
+            <h1><a href="/">sarah <br/>june <br/>fischer</a></h1>
+            <h3><a href="/">UX / UI Design</a></h3>
+            <div class="social">
+              <a href="https://twitter.com/sarah_june12" target="_blank"><img src="../../img/twitter.png"></a>
+              <a href="https://www.linkedin.com/in/sarahjunefischer/" target="_blank"><img src="../../img/linkedin.png"></a>
+              <a href="https://dribbble.com/sarahjune" target="_blank"><img src="../../img/dribbble.png"></a>
+              <a href="mailto:sarah@sarahjunefischer.com"><img src="../../img/mail.png"></a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <span id="close"></span>
+        <span class="return"><a href="/case-studies/code-fellows-homepage/">Return to top</a></span>
+        <section class="cs-full">
+          <div class="outer">
+            <h2>Case&nbsp;Studies | Calendar Filter Redesign</h2>
+            <article class="details">
+              <div>
+                <!-- <figure>
+                  <img src="../../img/homepage-thumbnail.png">
+                </figure> -->
+                <h3>Code Fellows | Website</h3>
+                <p>Knowing how your designs will scale is an art, something I learned first-hand when I realized my original (2+ years old) design of the filter on Code Fellows’ <a href="https://www.codefellows.org/course-calendar/" target="_blank">course calendar</a> wasn’t meeting the needs of our ever-expanding course offerings.</p>
+                <p>It was time for a revamp.</p>
+                <h4>The Problem</h4>
+                <p>The current filter listed every course we offered as a filtering option, with each box checked on page load. If the user wanted to narrow down the displayed courses to just one or two offerings, they had to uncheck the boxes for the courses they weren’t interested in — around 10 clicks. Far too many.</p>
+                <figure class="img-gs
+                ">
+                <figcaption>The Original Filter</figcaption>
+                  <img src="../../img/old-filter-widget.png">
+                </figure>
+                <p>The filter list was also so long that on laptop browser dimensions of 1280 x 680px, the user had to scroll just to see all course options, never mind the additional filters for sorting by experience level, start date, schedule (full time vs. part time), and city.</p>
+                <h4>The Goal</h4>
+                <p>The goal of the redesign was to simplify the filter so it would take the user a maximum of three clicks to display only the upcoming classes they wanted to see.</p>
+                <h4>Researching</h4>
+                <p>During the research phase, I interviewed several people on our admissions and operations teams who rely on the filter to find specific courses on the calendar.</p>
+                <p>I had originally hypothesized that connecting the filter to URL parameters would remove the Admissions department’s need for direct links that point to specific courses on the calendar, achieved by clicking the course’s title.</p>
+                <p>After interviewing the team, however, I discovered they relied heavily on being able to send students links to specific courses on the calendar. I had originally assumed no one used those hyperlinks and planned to remove them. Assumption #1 debunked.</p>
+                <p>The Operations department needed to be able to cross-reference the information on the calendar with the information in other systems, drilling down in the filter to find specific course types. Unfortunately, with the current setup, this took the afore-mentioned 10+ clicks. So our plan to reduce the number of options on the calendar and simplify the design would fix this issue. Assumption #2 confirmed.</p>
+                <p>The third issue was that the filter had too many options—we now only run classes in Seattle, so a filter for selecting a city was unnecessary. And we number our courses much like universities, where courses at the 500 level are much more difficult than those at the 100 level. This made the “experience level” section moot.</p>
+                <p>And last, we didn’t always have all course types scheduled, but because the filter was hard-coded, the user would be met with an empty page if they selected those courses. I assumed my request for non-scheduled courses to not appear in the filter was wishful thinking because I wasn’t sure if it was possible, both technically and with the constraints of time and developer resources (spoiler: it’s totally possible).</p>
+                <h4>Wireframing / Prototyping</h4>
+                <p>Because we were improving a filter that was already in place, the wireframing and prototyping phase was rolling into one. In Photoshop, I modified a screenshot of the existing wireframe to remove unnecessary sections and build out an example of both what the filter should include and how the functionality should work.</p>
+                <figure class="img-center">
+                <figcaption>Prototype</figcaption>
+                  <img src="../../img/filter-widget-wireframe.png">
+                </figure>
+                <h4>Documentation</h4>
+                <p>Unlike when I redesigned Code Fellows’ homepage, I had developer support for the JavaScript in this project and wasn’t relying on my own technical prowess.</p>
+                <p>As I redesigned the filter, I wrote down expected functionality, all necessary filter options, the JSON file the information was sourced from, and the ultimate goal (as few clicks for the user as possible) so the developer could get a full picture before diving in.</p>
+                <p>I also met regularly with him throughout the project to make sure we were on the same track.</p>
+                <h4>Final Result</h4>
+                <p>The <a href="https://www.codefellows.org/course-calendar/" target="_blank">finished product</a> looked much like the initial designs, with one important addition not in the original prototype—a <em>clear filters</em> button! The filter, while not yet affecting the URL parameters (stretch goal) is much shorter and cleaner, reduced to three categories, and satisfactorily narrows down a user’s search within three clicks.</p>
+                <figure class="img-center">
+                <figcaption>Finished product</figcaption>
+                  <img src="../../img/final-filter-widget.png">
+                </figure>
+                <p>Instead of all filter options being hard-coded, the filter pulls its options from the JSON file of scheduled classes, the same place the actual list of classes pulls from, meaning that one JSON file is the single source of truth for the entire page, and if a course isn’t listed in the JSON file, it won’t be an option in the filter. The developer I worked with also made sure that past courses wouldn’t show on the page or in the filter.</p>
+                <h4>Outcomes</h4>
+                <p>The biggest outcome I witnessed was much happier Admissions and Operations departments. The filter boxes are unchecked on page load and all courses are displayed. When the user clicks the course type they want to see dates for, the filter expands to show all (checked) courses in that available level, filtering the page at the same time.</p>
+                <h4>Next Steps</h4>
+                <p>The calendar has URL parameters in place so that unique links can show only specific courses or quarters, but it’s not yet connected to the filter. This is the next step, so if a user wants to see only Python courses happening in our Nights & Weekends track, they can bookmark the link and the URL parameters will apply the proper filter when they revisit the link.</p>
+                <h4>Conclusion</h4>
+                <p>This project taught me to really think through scalability at the start of my designs (the new filter will continue to scale even as we add more classes), and that even minor changes like this one can really improve the user’s experience with your product.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </body>
+    <script>
+      window.onload = function(){
+        document.getElementById('close').onclick = function(){
+          document.getElementsByTagName('main')[0].classList.toggle("full");
+        };
+      };
+    </script>
+</html>
