@@ -210,10 +210,6 @@ button {
   color: #262625;
   font-variant: all-small-caps;
 }
-button:hover {
-  border: 2px solid #EE6C4D;
-  margin: 23px -1px;
-}
 main a {
   color: #262625;
   text-decoration: none;
