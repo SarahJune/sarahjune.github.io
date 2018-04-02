@@ -210,7 +210,7 @@ button {
   color: #262625;
   font-variant: all-small-caps;
 }
-.section-buttons button:hover {
+.section-buttons button:hover, .cs-detail button:hover {
   border: 2px solid #EE6C4D;
   margin: 23px -1px;
 }
