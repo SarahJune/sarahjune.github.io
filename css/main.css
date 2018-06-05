@@ -525,7 +525,6 @@ main a {
     margin-bottom: 24px;
   }
 }
-
 @media screen and (max-width: 550px) {
   header h1 {
     font-size: 2em;
@@ -533,14 +532,20 @@ main a {
   section h2 {
     line-height: .8;
   }
-  nav {
+  header nav {
     width: 100%;
+    justify-content: flex-start;
   }
   header .headshot {
     width: 25%;
+    margin: 0;
   }
-  .social img {
-    width: 20px;
+  .mobile {
+    margin-left: 25px;
+  }
+  .icon {
+    height: 30px;
+    width: 30px;
   }
   .cs-preview {
     display: inline-block;
@@ -564,4 +569,12 @@ main a {
   }
   .grid_inner .image {
       width: 100%;
+  }
 }
+@media screen and (max-width: 410px) {
+  .headshot {
+    display: none;
+  }
+  .section-buttons {
+    flex-direction: column;
+  }
