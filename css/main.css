@@ -277,8 +277,8 @@ button {
   border-style: none;
   border-width: 0px;
   padding: 0;
-  margin: 24px 0;
   background-color: transparent;
+  height: 75px;
 }
 button a {
   border: 1px solid #262625;
