@@ -74,6 +74,7 @@ li:before {
   margin-right: 10px;
   top: 0;
   left: 0;
+  z-index: 50;
 }
 a {
   color: #262625;
@@ -146,7 +147,6 @@ header {
 }
 header h1 {
   color: #262626;
-  font-weight: 400;
   margin: 0;
   line-height: .8em;
   font-variant: all-small-caps;
@@ -199,11 +199,10 @@ header h5 {
   font-size: 1.5em;
   line-height: 1em;
   font-weight: 300;
-  margin: .6em 0;
 }
 nav {
   display: inline-block;
-  width: 50%;
+  width: 60%;
   margin: auto;
   max-width: 250px;
 }
@@ -222,7 +221,7 @@ nav {
 section {
   margin: 100px auto 200px;
   padding: 0 50px;
-  max-width: 600px;
+  max-width: 650px;
 }
 section:last-child {
   margin-bottom: 300px;
@@ -269,17 +268,17 @@ h3, h4 {
   text-align: left;
   background: white;
   transition: all .2s ease-in-out;
-  align-items: center;
   z-index: 99;
   position: relative;
   margin: 50px auto 100px;
 }
 button {
-  border-color: none;
+  border-color: transparent;
   border-style: none;
   border-width: 0px;
   padding: 0;
   margin: 24px 0;
+  background-color: transparent;
 }
 button a {
   border: 1px solid #262625;
@@ -313,28 +312,11 @@ main a {
 .cs-preview figure {
   width: 33%;
   margin-left: 0;
-  /*border-right: 1px solid #262625;*/
+  padding: 10px;
 }
 .cs-detail {
   width: 67%;
 }
-/* .cs-detail h3 {
-  font-weight: 600;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  font-variant: all-small-caps;
-}
-.cs-detail h4 {
-  font-weight: 300;
-  font-size: .8em;
-  line-height: 1.5em;
-  margin-bottom: 1.5em;
-}
-.cs-detail p {
-  font-size: .8em;
-  margin: 0;
-  line-height: 24px;
-} */
 .cs-full {
   margin-top: 0;
 }
@@ -345,7 +327,7 @@ main a {
   margin-top: 150px;
   clear: both;
 }
-.details div:first-of-type {
+.cs-full .details div:first-of-type {
   margin-top: 0px;
 }
 .cs-full .outer {
@@ -462,6 +444,8 @@ main a {
 @media screen and (max-width: 810px) {
   header {
     width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
     position: relative;
     clear: both;
     height: auto;
@@ -476,22 +460,21 @@ main a {
     justify-content: space-around;
     -webkit-align-items: center;
     align-items: center;
-    max-width: 810px;
+    max-width: 600px;
+    width: 100%;
+    padding: 18px 0;
+  }
+  header h1 {
+    margin: -13px 0 0 0;
   }
   header .headshot {
-    margin: 18px;
-    width: 50%;
+    width: 25%;
   }
   header .headshot img {
     margin-bottom: 0;
   }
   header br {
     display: none;
-  }
-  header .mobile {
-    width: 50%;
-    float: left;
-    margin: auto;
   }
   section h2 {
     margin: 12px 0;
@@ -520,6 +503,7 @@ main a {
     width: 100%;
     font-weight: 700;
     color: #58A4B0;
+    z-index: 99;
   }
   .return a {
     color: inherit;
@@ -542,9 +526,12 @@ main a {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   header h1 {
     font-size: 2em;
+  }
+  section h2 {
+    line-height: .8;
   }
   nav {
     width: 100%;
@@ -560,11 +547,21 @@ main a {
   }
   .cs-preview figure {
     width: 100%;
+    padding: 20px 0;
+  }
+  .cs-detail {
+    width: 100%;
+    text-align: center;
+  }
+  .cs-detail h4 {
+    line-height: .8;
+    margin-bottom: 25px;
   }
   .cs-full .img-left, .cs-full .img-center, .cs-full .img-right, .half, .third, .fourth {
     clear: both;
     margin: 24px auto;
     width: 100%;
   }
-
+  .grid_inner .image {
+      width: 100%;
 }
