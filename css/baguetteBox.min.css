@@ -17,7 +17,7 @@
      line-height: 2em;
      white-space: normal;
      color: white;
-     font-weight: 400;
+     font-weight: 100;
      background-color: #000;
      background-color: rgba(0,0,0,.6);
      /* font-family: sans-serif; */
@@ -95,17 +95,17 @@
     padding: 0;
     margin: 0;
     border: 0;
-    background-color: #323232;
-    background-color: rgba(50, 50, 50, .5);
+    /* background-color: #323232;
+    background-color: rgba(50, 50, 50, .5); */
     color: #ddd;
     font: 1.6em sans-serif;
     -webkit-transition: background-color .4s ease;
     transition: background-color .4s ease
 }
-.baguetteBox-button:focus,
+/* .baguetteBox-button:focus,
 .baguetteBox-button:hover {
     background-color: rgba(50, 50, 50, .9)
-}
+} */
 .baguetteBox-button#next-button {
     right: 0%;
 }

@@ -1,6 +1,6 @@
 /* Orange: #EE6C4D
 dark gray: #373F51
-Teal: #58A4B0
+Teal: #6DB0B0
 Black: #262625
 White: #ffffff */
 
@@ -48,7 +48,7 @@ h4 {
 h5 {
   font-size: 24px;
   font-size: 2.4rem;
-  color: #58A4B0;
+  color: #6DB0B0;
   font-weight: 500;
 }
 h6 {
@@ -101,14 +101,14 @@ img {
 .return {
   display: none;
 }
-span::before {
+.caret::before {
   content: '«';
   z-index: 99;
   float: left;
   padding: 10px;
   margin-left: -45px;
   font-weight: 400;
-  color: #58A4B0;
+  color: #6DB0B0;
   font-size: 2.4rem;
   transition: all .5s ease-in-out;
   cursor: pointer;
@@ -193,7 +193,7 @@ header a {
   margin-right: 10px;
 }
 header h5 {
-  color: #58A4B0;
+  color: #6DB0B0;
   z-index: 1;
   z-index: 100;
   font-size: 1.5em;
@@ -208,15 +208,24 @@ nav {
 }
 .social {
   text-align: center;
-  margin: auto;
   width: 100%;
+  max-width: 100px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
+.social a {
+  color: #323232;
+  font-size: 24px;
+}
 .social a:hover {
-  border: 2px solid #58A4B0;
-  margin: -1px 9px -1px -1px;
+  /* border: 2px solid #6DB0B0;
+  margin: -1px 9px -1px -1px; */
+  color: #6DB0B0;
+}
+.fas, .fa, .fab {
+  font-weight: 100;
+  font-size: 18px;
 }
 section {
   margin: 100px auto 200px;
@@ -258,7 +267,7 @@ h3, h4 {
 .about a {
   text-decoration: none;
   color: #262626;
-  border-bottom: 3px solid #58A4B0;
+  border-bottom: 3px solid #6DB0B0;
   margin-bottom: -2px;
 }
 .cs-preview {
@@ -293,9 +302,9 @@ button a {
 }
 .section-buttons button a:hover, .cs-detail button a:hover {
   border: 2px solid #EE6C4D;
-  border: 2px solid #58A4B0;
+  border: 2px solid #6DB0B0;
   margin: 23px -1px;
-  color: #58A4B0;
+  color: #6DB0B0;
 }
 main a {
   color: #262625;
@@ -332,7 +341,7 @@ main a {
 }
 .cs-full .outer {
   margin-top: 50px;
-  color: #58A4B0;
+  color: #6DB0B0;
 }
 .cs-full figure {
   box-sizing: border-box;
@@ -505,7 +514,7 @@ main a {
     background: white;
     width: 100%;
     font-weight: 700;
-    color: #58A4B0;
+    color: #6DB0B0;
     z-index: 99;
   }
   .return a {
