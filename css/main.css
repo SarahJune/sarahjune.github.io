@@ -117,7 +117,7 @@ img {
 .full {
   width: 100%;
 }
-.full span::before {
+.full .caret::before {
   margin-left: 5px;
   transform: rotate(-180deg);
 }
@@ -503,7 +503,7 @@ main a {
   .cs-full h2 {
     font-size: 3em;
   }
-  span::before {
+  .caret::before {
     display: none;
   }
   .return {
