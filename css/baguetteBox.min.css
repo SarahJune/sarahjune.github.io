@@ -95,6 +95,7 @@
     padding: 0;
     margin: 0;
     border: 0;
+    background-color: transparent;
     /* background-color: #323232;
     background-color: rgba(50, 50, 50, .5); */
     color: #ddd;
@@ -122,6 +123,7 @@
 .baguetteBox-button svg {
     position: absolute;
     top: calc(50% - 30px);
+    left: calc(0% + 30px);
 }
 .baguetteBox-spinner {
     width: 40px;
