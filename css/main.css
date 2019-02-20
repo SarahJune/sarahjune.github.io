@@ -184,8 +184,8 @@ h3, h4 {
   height: 75px;
 }
 .cs-preview button a {
-  /* border: 1px solid #262625; */
-  /* padding: 12px 16px 16px 16px; */
+  border: 1px solid #262625;
+  padding: 12px 16px 16px 16px;
   font-size: 18px;
   font-size: 1.8rem;
   background-color: transparent;
