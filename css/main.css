@@ -125,10 +125,12 @@ img {
 section {
   padding: 0 50px;
   max-width: 650px;
-  min-height: 100vh;
   margin: auto;
   display: flex;
   align-items: center;
+}
+section.home {
+  min-height: 100vh;
 }
 h3, h4 {
   margin: 0;
