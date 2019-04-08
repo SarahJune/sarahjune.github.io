@@ -28,3 +28,7 @@ gh-pages/
 pkg/
 test/dest
 tmp/*
+
+_site/authors/sarah-june-fischer.html
+_site/feed.xml
+_site/sitemap.xml
