@@ -1,0 +1,35 @@
+---
+layout: default
+collection: blog
+permalink: blog/:title
+nav: blog
+---
+
+
+<!-- <figure>
+  <img src="{{ site.baseurl }}/assets/img/{{ page.image }}" alt="{{ page.title }}" title="{{ page.title }}">
+</figure> -->
+<div class="blog-detail" style="background: linear-gradient(rgba(67, 87, 89, 0.8),rgba(67, 87, 89, 0.8)),url('{{ site.baseurl }}/assets/img/{{ page.image }}') center center no-repeat; background-size: cover;">
+  <div class="inner">
+    <h2>{{ page.title }}</h2>
+    <h6>
+      {% assign author = site.authors | where: 'short_name', page.author | first %}
+      {% if author %}
+        {{ author.name }}&nbsp &nbsp |&nbsp &nbsp
+      {% endif %}
+      {{ page.date | date: '%B %d, %Y' }}
+    </h6>
+  </div>
+</div>
+<h6 style="text-align: right; margin: -35px 10px 0; z-index: 99; height: 35px;"><a style="background: none; opacity: .3; color: white;" href="{{ page.img-credit }}" target="_blank">Image credit</a></h6>
+<section class="blog-post">
+  <div>
+
+    {{ content }}
+    <!-- <p>{{ page.categories }}</p> -->
+  </div>
+  <br/>
+  <br/>
+  <p><a href="/blog">« Back to blog index</a></p>
+
+</section>

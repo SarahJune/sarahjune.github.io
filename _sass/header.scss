@@ -1,0 +1,113 @@
+header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  margin: auto;
+  position: fixed;
+  justify-content: space-between;
+  background:
+    linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('../img/seattle.png') no-repeat center center;
+  background-size: cover;
+  margin: auto;
+  box-shadow: $insetshadow;
+  width: 25%;
+  padding-bottom: 1%;
+  .social {
+    @media screen and (max-width: 1200px) {
+      padding: 12px
+    }
+  }
+}
+
+nav {
+  box-sizing: border-box;
+  margin: 0;
+  z-index: 99;
+  /* background: white; */
+  text-align: center;
+}
+nav > div {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+}
+.current {
+  background-image: linear-gradient(to bottom, white 0%, white 45%, $primary 45%, $primary 100%);
+}
+nav a {
+  padding: 12px;
+  font-size: 16px;
+  background-color: transparent;
+  box-shadow: $shadow;
+  border: none;
+  text-decoration: none;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, white 0%, white 50%, $primary 50%, $primary 100%);
+  transition: .2s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+  width: 50%;
+  margin: 20px auto;
+  display: block;
+  font-family: "Poppins";
+}
+nav a:hover {
+  background-position: 0 100%;
+  font-weight: 700;
+}
+.icon {
+  background-size: 74%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+.title {
+  text-align: center;
+  margin: 75px auto 25px;
+  font-weight: 700;
+  h1 {
+    color: $primary;
+    margin: 0;
+    font-variant: all-petite-caps;
+    // font-size: 36px;
+    line-height: 36px;
+    display: inline;
+    a {
+      text-decoration: none;
+      -webkit-color: inherit;
+      -webkit-text-decoration: none;
+      color: $primary;
+    }
+  }
+}
+.social {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social a {
+  color: $mediumgray;
+  font-size: 18px;
+}
+.social a:hover {
+  /* border: 2px solid #6DB0B0;
+  margin: -1px 9px -1px -1px; */
+  color: $primary;
+}
+.fas, .fa, .fab {
+  font-weight: 100;
+}
+
+/* .mobile, .social {
+  animation: fadein 1.5s ease-in .5s forwards;
+  opacity: 0;
+} */

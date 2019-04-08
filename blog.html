@@ -1,0 +1,27 @@
+---
+layout: default
+title: Blog
+collection: blog
+nav: blog
+---
+
+<section class="blog-index"
+  <div>
+    <h2>Blog</h2>
+    <hr class="hrprimary">
+    {% for post in site.posts %}
+      <article>
+        <a href="{{ post.url }}" class="blog-title-link"><h3>{{ post.title }}</h3></a>
+        <h6>
+          {% assign author = site.authors | where: 'short_name', page.author | first %}
+          {% if author %}
+            {{ author.name }}&nbsp &nbsp |&nbsp &nbsp
+          {% endif %}
+          {{ post.date | date: '%B %d, %Y' }}
+        </h6>
+        <p>{{ post.excerpt }}</p>
+        <a href="{{ post.url }}">Read more »</a>
+      </article>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,279 @@
+/* GALLERY ITEMS */
+.fg-gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.fg-gallery:after {
+    content: "";
+    /* display: block;
+    clear: both; */
+    flex: auto;
+}
+.gallery-items {
+    cursor: pointer;
+    float: left;
+    overflow: hidden;
+    height: 275px;
+    width: 29%;
+    margin-bottom: 2%;
+    border: 10px solid #fff;
+    height: 180px;
+    box-shadow: $shadow;
+}
+.gallery-items:last-child {
+  margin-left: 2.5%;
+}
+/* GALLERY COLUMNS */
+.cols-2 .gallery-items {
+    width: 49%;
+}
+.cols-2 .gallery-items:nth-child(2n+2) {
+    margin-right: 0;
+}
+
+.cols-3 .gallery-items {
+    width: 32%;
+}
+.cols-3 .gallery-items:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.cols-4 .gallery-items {
+  width: 29%;
+
+  @media screen and (max-width: 800px) {
+    width: 45%;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+.cols-4:nth-child(4n+4) {
+    margin-right: 0;
+}
+
+.cols-5 .gallery-items {
+    width: 18.4%;
+}
+.cols-5 .gallery-items:nth-child(5n+5) {
+    margin-right: 0;
+}
+
+.cols-6 .gallery-items {
+    width: 15%;
+}
+.cols-6 .gallery-items:nth-child(6n+6) {
+    margin-right: 0;
+}
+
+/* GALLERY DATA */
+.gallery-data {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+.gallery-data.active {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}
+.data-items {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.data-items.active  {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.item-border {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.data-items.active .item-border {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* arrows */
+.gallery-arrow {
+    position: fixed;
+    top: 50%;
+    z-index: 9999;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.gallery-arrow > p {
+    transition: all .2s ease;
+    transform: scale(1);
+    width: 75px;
+    height: 75px;
+    padding: 25px;
+    text-align: center;
+    margin: auto;
+    line-height: 60px;
+    color: rgba(255,255,255,1);
+    font-family: $secondfam;
+    font-size: 56px;
+}
+.gallery-arrow p:hover {
+    background-color: rgba(0,0,0,.1);
+}
+.gallery-arrow p:active {
+    transition-duration: .0s;
+    transform: scale(.9);
+}
+.next-btn {
+    right: 0;
+}
+.prev-btn {
+    left: 0;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+/* close button */
+.close-btn {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: 75px;
+    z-index: 9999;
+    cursor: pointer;
+}
+.close-btn svg {
+    fill: #fff;
+    width: 15px;
+    height: 15px;
+    transition: all .5s ease;
+    transform: rotateZ(0deg);
+}
+.close-btn:hover svg {
+    transform: rotateZ(180deg);
+}
+
+.fg-gallery > div:first-child {
+  margin-top: 75vh;
+  -webkit-animation: scrollup 2.25s 0.1s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: scrollup 2.25s 0.1s; /* Firefox < 16 */
+    -ms-animation: scrollup 2.25s 0.1s; /* Internet Explorer */
+     -o-animation: scrollup 2.25s 0.1s; /* Opera < 12.1 */
+        animation: scrollup 2.25s 0.1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+}
+.fg-gallery > div:nth-child(2) {
+  margin-top: 75vh;
+  -webkit-animation: scrollup 2.25s 0.2s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: scrollup 2.25s 0.2s; /* Firefox < 16 */
+    -ms-animation: scrollup 2.25s 0.2s; /* Internet Explorer */
+     -o-animation: scrollup 2.25s 0.2s; /* Opera < 12.1 */
+        animation: scrollup 2.25s 0.2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+}
+.fg-gallery > div:nth-child(3) {
+  margin-top: 75vh;
+  -webkit-animation: scrollup 2.25s 0.3s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: scrollup 2.25s 0.3s; /* Firefox < 16 */
+    -ms-animation: scrollup 2.25s 0.3s; /* Internet Explorer */
+     -o-animation: scrollup 2.25s 0.3s; /* Opera < 12.1 */
+        animation: scrollup 2.25s 0.3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+}
+.fg-gallery > div:nth-child(4) {
+  margin-top: 75vh;
+  -webkit-animation: scrollup 2.25s 0.1s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: scrollup 2.25s 0.1s; /* Firefox < 16 */
+    -ms-animation: scrollup 2.25s 0.1s; /* Internet Explorer */
+     -o-animation: scrollup 2.25s 0.1s; /* Opera < 12.1 */
+        animation: scrollup 2.25s 0.1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+}
+.fg-gallery > div:nth-child(5) {
+  margin-top: 75vh;
+  -webkit-animation: scrollup 2.25s 0.2s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: scrollup 2.25s 0.2s; /* Firefox < 16 */
+    -ms-animation: scrollup 2.25s 0.2s; /* Internet Explorer */
+     -o-animation: scrollup 2.25s 0.2s; /* Opera < 12.1 */
+        animation: scrollup 2.25s 0.2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+}
+.fg-gallery > div:nth-child(6) {
+  margin-top: 75vh;
+  -webkit-animation: scrollup 2.25s 0.3s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: scrollup 2.25s 0.3s; /* Firefox < 16 */
+    -ms-animation: scrollup 2.25s 0.3s; /* Internet Explorer */
+     -o-animation: scrollup 2.25s 0.3s; /* Opera < 12.1 */
+        animation: scrollup 2.25s 0.3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+}
+.fg-gallery > div:nth-child(7) {
+  margin-top: 75vh;
+  -webkit-animation: scrollup 2.25s 0.3s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: scrollup 2.25s 0.3s; /* Firefox < 16 */
+    -ms-animation: scrollup 2.25s 0.3s; /* Internet Explorer */
+     -o-animation: scrollup 2.25s 0.3s; /* Opera < 12.1 */
+        animation: scrollup 2.25s 0.3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+}
+.fg-gallery > div:nth-child(8) {
+  margin-top: 75vh;
+  -webkit-animation: scrollup 2.25s 0.4s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: scrollup 2.25s 0.4s; /* Firefox < 16 */
+    -ms-animation: scrollup 2.25s 0.4s; /* Internet Explorer */
+     -o-animation: scrollup 2.25s 0.4s; /* Opera < 12.1 */
+        animation: scrollup 2.25s 0.4s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+}
+.fg-gallery > div:nth-child(9) {
+  margin-top: 75vh;
+  -webkit-animation: scrollup 2.25s 0.5s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: scrollup 2.25s 0.5s; /* Firefox < 16 */
+    -ms-animation: scrollup 2.25s 0.5s; /* Internet Explorer */
+     -o-animation: scrollup 2.25s 0.5s; /* Opera < 12.1 */
+        animation: scrollup 2.25s 0.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+}
+
+@keyframes scrollup {
+    0% {
+    margin-top: 75vh;
+    }
+    100%   {
+    margin-top: 0;
+    }
+}

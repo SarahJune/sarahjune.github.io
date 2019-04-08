@@ -1,0 +1,29 @@
+
+<div class="title">
+  <h1><a href="/"><span class="first">Sarah</span>
+  <br/>
+  <span class="middle">June </span>
+  <br/>
+  <span class="last">Fischer</span></a></h1>
+  <h5><a href="/">—&nbsp;&nbsp;Designer&nbsp; & &nbsp;Writer&nbsp;&nbsp;—</a></h5>
+</div>
+<nav id="nav">
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}"
+      {% if page.url == item.link or item.collection == page.collection or item.nav == page.nav %}
+       class="current"{% endif %}>
+      {{ item.name }}
+    </a>
+  {% endfor %}
+  <!-- <a href="/">Home</a><br/>
+  <a href="/designs">Designs</a><br/>
+  <a href="/case-studies">Case&nbsp;Studies</a><br/>
+  <a href="/blog">Blog</a><br/>
+  <a href="/contact">Contact</a> -->
+</nav>
+<div class="social desktop-only">
+  <a href="mailto:sarah@sarahjunefischer.com"><span class="far fa-envelope"></span></a>
+  <a href="https://www.linkedin.com/in/sarahjunefischer/" target="_blank"><span class="fab fa-linkedin-in"></span></a>
+  <a href="https://dribbble.com/sarahjune" target="_blank"><span class="fab fa-dribbble"></span></a>
+  <a href="https://twitter.com/sarah_june12" target="_blank"><span class="fab fa-twitter"></span></a>
+</div>
