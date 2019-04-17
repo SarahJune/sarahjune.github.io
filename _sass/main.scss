@@ -347,7 +347,7 @@ section {
 }
 .hello {
   padding: 75px;
-  width: 50%;
+  width: 60%;
   box-sizing: border-box;
   float: right;
   margin: 50px auto auto;
@@ -373,7 +373,7 @@ section {
   position: relative;
   opacity: 0;
   float: left;
-  width: 50%;
+  width: 40%;
   z-index: 50;
   position: relative;
   padding: 0;
@@ -394,8 +394,6 @@ section {
   box-sizing: border-box;
   vertical-align: bottom;
   display: block;
-  // box-shadow: $shadow;
-  // border-radius: 50%;
 }
 @keyframes move {
   from {
