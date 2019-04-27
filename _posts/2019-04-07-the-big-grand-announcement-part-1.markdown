@@ -28,7 +28,7 @@ Actually, it turns out that—according to <a href="https://www.merriam-webster.
 Setting and achieving a goal? Now *that* I can get behind.
 
 <figure class="halfwidth" >
-  <img src="{{site.baseurl}}/assets/img/sign-me-up.gif" alt="Sign Me Up">
+  <img src="{{site.baseurl}}/assets/img/blogimages/sign-me-up.gif" alt="Sign Me Up">
 </figure>
 
 ### So... What's the goal?
@@ -54,7 +54,7 @@ I do know that I’m looking forward to teaming up with some amazing people, tra
 
 
 <figure class="halfwidth">
-  <img src="{{site.baseurl}}/assets/img/blue-steel.gif" alt="Keep Your Eye on the Ball">
+  <img src="{{site.baseurl}}/assets/img/blogimages/blue-steel.gif" alt="Keep Your Eye on the Ball">
   <figcaption>Blue Steel, anyone?</figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ Thank you for making it to the end of The Big, Grand Announcement: Part 1*! You�
 <em>*Part 2 coming soon. Until then, please enjoy The Best Gif of All Time:</em>
 
 <figure class="halfwidth" >
-  <img src="{{site.baseurl}}/assets/img/the-best-gif.gif" alt="Keep Your Eye on the Ball">
+  <img src="{{site.baseurl}}/assets/img/blogimages/the-best-gif.gif" alt="Keep Your Eye on the Ball">
 </figure>
 
 ### TL;DR:
