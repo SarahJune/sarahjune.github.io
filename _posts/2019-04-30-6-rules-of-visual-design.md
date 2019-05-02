@@ -1,6 +1,6 @@
 ---
 title: "6 Principles of Visual Design"
-date: 2019-04-25
+date: 2019-04-30
 collection: blog
 author: sarah
 image: houses.jpg
