@@ -3,8 +3,8 @@ title: "Design Resources for Beginners"
 date: 2019-05-10
 collection: blog
 author: sarah
-image:
-img-credit:
+image: houses.jpg
+img-credit: https://unsplash.com/photos/qY_yTu7YBT4
 permalink: blog/design-resources-for-beginners
 nav: blog
 ---
@@ -19,16 +19,22 @@ I'll add more resources as I go (or perhaps include resources for intermediate d
 
 ### Designers to Follow
 
-Refactoring UI https://refactoringui.com/ - steve schoger
-https://learnui.design/blog/ by erik d. kennedy
-tobias van schneider
+Over the years, there have been specific designers I've always come back to. They are both skilled in their craft and great at explaining / demonstrating specific topics.
+
+These designers share content and tips on a bunch of different platforms, so I encourage you to sign up for their newsletters, follow them on Twitter, and check out their blog.
+
+* Steve Schoger, <a href="https://refactoringui.com/" target="____blank">RefactoringUI</a>
+
+* Erik Kennedy, <a href="https://learnui.design/blog/" target="____blank">LearnUI Design</a>
+
+* Tobias Van Schneider, <a href="https://www.vanschneider.com/" target="____blank">House of Van Schneider</a>
 
 ### Tutorials to Try
 
 https://www.hongkiat.com/blog/apple-icloud-photoshop-tutorial/
 Every Tuesday
 
-### Books and Blogs to Read
+### Books & Blogs to Read
 
 https://www.amazon.com/About-Face-Essentials-Interaction-Design/dp/1118766571
 https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654/ref=sr_1_1
@@ -39,7 +45,12 @@ https://medium.com/truthaboutdesign
 
 dribbble
 
-### tests to take
+### Tests to Take
 
-that ui test
+https://cantunsee.space/
 https://mycreativetype.com/
+https://type.method.ac/
+https://shape.method.ac/
+https://color.method.ac/
+https://bezier.method.ac/
+http://pixact.ly/
