@@ -1,0 +1,60 @@
+.details {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    padding: 25px 50px;
+    background-color: white;
+    float: left;
+    margin: 75px auto -150px;
+    text-align: center;
+    z-index: 90;
+    position: relative;
+  }
+}
+.web, .print, .graphic {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 150px;
+  z-index: 10;
+  position: relative;
+  figure {
+    float: left;
+    width: 50%;
+    padding: 0;
+    img {
+      display: block;
+    }
+  }
+  div {
+    width: 50%;
+    display: flex;
+    p {
+      margin-top: 150px;
+      padding: 50px;
+    }
+  }
+}
+.web, .print {
+  figure {
+    float: left;
+  }
+  h3 {
+    margin: auto 0 20px -35px;
+    text-align: left;
+  }
+}
+
+.graphic {
+  figure {
+    float: right;
+  }
+  h3 {
+    margin: auto -35px 20px 0px;
+    text-align: right;
+  }
+}
