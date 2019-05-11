@@ -9,9 +9,9 @@ permalink: blog/learning-resources-for-design-beginners
 nav: blog
 ---
 
-In college, my minor was "visual communications," but it wasn't until 2016 that I decided to actively pursue a career in design.
+In college, my minor was "visual communications," but it wasn't until 2016 that I decided to focus on a career solely in design.
 
-It's been three years of constant practice, reading, observing, studying, and striving to get better (and I'm starting to suspect this is the new normal). Now, several years in, I wanted to share the resources that **actively helped me become a better designer** and that I still reference on a regular basis.
+It's been years of constant practice, reading, observing, studying, and striving to get better (and I'm starting to suspect this is the new normal). Now, several years into my career, I wanted to share the resources that **actively helped me become a better designer** and that I still reference on a regular basis.
 
 Every resource in this list is freely available online (or accessible through the local library, as is the case with a couple of books). I definitely think that, as you dig more into design, you should support fellow designers who are publishing courses, books, and tools to help their peers. However, if you're just exploring, there are plenty of free resources to get you started. Once you're in it a little more, it'll be easier to recognize which resources are worth investing in.*
 
