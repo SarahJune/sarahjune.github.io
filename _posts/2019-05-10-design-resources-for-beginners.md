@@ -1,6 +1,6 @@
 ---
 title: "Learning Resources for Design Beginners"
-date: 2019-05-07
+date: 2019-05-10
 collection: blog
 author: sarah
 image: resources.jpg
