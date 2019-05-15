@@ -80,7 +80,7 @@ light mint:
   header .headshot img {
     margin-bottom: 0;
   }
-  .title, .nav {
+  .title, nav {
     width: 100%;
     margin: auto 0;
   }
@@ -183,7 +183,7 @@ light mint:
   .nav {
     flex-wrap: wrap;
   }
-  .nav a {
+  nav a {
     width: 25%;
   }
   .home {
