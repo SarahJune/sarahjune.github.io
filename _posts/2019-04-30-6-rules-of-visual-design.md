@@ -37,7 +37,7 @@ Let's dive in!
 <a href="http://erikdkennedy.com/" target="____blank">Erik Kennedy's</a> advice to "double your whitespace" is spot on. In this era of clean, minimalist design and spacious layouts, you are much more likely to have too little whitespace (the negative space around your elements) than too much. This applies to both font spacing and overall layout.
 
 #### Font
-The height of the whitespace around a line of type is called `line-height` in code and "leading" (pronounced *ledding*) in design. The default height of each line is usually 1.2 times the height of the type, so a 20px font would have a 24px line height. However, this spacing still feels crowded to me. My go-to is 1.5 to 2 times the font size. For context, the type you're reading is a 20px font with a 40px line height.
+The height of the whitespace around a line of type is called `line-height` in code and "leading" (pronounced *ledding*) in design. The default height of each line is usually 1.2 times the height of the type, so a 20px font would have a 24px line height. However, this spacing still feels crowded to me. My go-to is 1.5 to 2 times the font size. For context, the type you're reading is 18px font with a 32px line height.
 
 <figure class="fullwidth">
   <img src="{{site.baseurl}}/assets/img/blogimages/line-height.png" alt="Line height">

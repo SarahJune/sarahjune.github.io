@@ -1,8 +1,8 @@
 
-  baguetteBox.run('.gallery', {
-    buttons: 'auto',
-    noScrollBars: 'true',
-  });
+  // baguetteBox.run('.gallery', {
+  //   buttons: 'auto',
+  //   noScrollBars: 'true',
+  // });
   // Image preview credit: https://feimosi.github.io/baguetteBox.js/
 
   // window.onload = function(){
