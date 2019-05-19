@@ -1,5 +1,25 @@
 .case-study {
   figure {
-    width: 50%;
+    margin-bottom: 5%;
+    a {
+      background-image: transparent;
+    }
+  }
+  h4 {
+    margin-top: 50px;
+  }
+  .previous {
+    float: left;
+  }
+  .next {
+    float: right;
+  }
+  .cs-figure {
+    // display: flex;
+    // flex-direction: row;
+    margin: 5%;
+    figure {
+      width: 75%;
+    }
   }
 }
