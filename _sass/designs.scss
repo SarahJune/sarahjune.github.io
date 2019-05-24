@@ -30,6 +30,26 @@
         padding: 30px;
       }
     }
+    .projects:nth-of-type(1) {
+      margin-top: 75vh;
+      -webkit-animation: scrollup 1s 0.1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: scrollup 1s 0.1s; /* Firefox < 16 */
+        -ms-animation: scrollup 1s 0.1s; /* Internet Explorer */
+         -o-animation: scrollup 1s 0.1s; /* Opera < 12.1 */
+            animation: scrollup 1s 0.1s;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+    }
+    .projects:nth-of-type(2) {
+      margin-top: 75vh;
+      -webkit-animation: scrollup 1s 0.2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: scrollup 1s 0.2s; /* Firefox < 16 */
+        -ms-animation: scrollup 1s 0.2s; /* Internet Explorer */
+         -o-animation: scrollup 1s 0.2s; /* Opera < 12.1 */
+            animation: scrollup 1s 0.2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+    }
     .projects:nth-of-type(odd) {
       background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
       figure {
@@ -51,14 +71,11 @@
   }
 }
 
-.web, .print {
-  figure {
-    float: left;
-  }
-}
-
-.graphic {
-  figure {
-    float: right;
-  }
+@keyframes scrollup {
+    0% {
+    margin-top: 75vh;
+    }
+    100%   {
+    margin-top: 0;
+    }
 }

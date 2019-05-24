@@ -1,6 +1,5 @@
 .case-study {
   figure {
-    margin-bottom: 5%;
     a {
       background-image: transparent;
     }
@@ -14,12 +13,16 @@
   .next {
     float: right;
   }
-  .cs-figure {
-    // display: flex;
-    // flex-direction: row;
-    margin: 5%;
-    figure {
-      width: 75%;
+}
+.cs-figure {
+  // display: flex;
+  // flex-direction: row;
+  figure {
+    figcaption {
+      max-width: 750px;
+      margin: auto;
+      font-size: 14px;
+      line-height: 21px;
     }
   }
 }
