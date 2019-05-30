@@ -1,0 +1,38 @@
+.case-study {
+  figure {
+    a {
+      background-image: transparent;
+    }
+  }
+  .hrprimary {
+    margin-bottom: 50px;
+  }
+  h4 {
+    margin-top: 50px;
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+  .previous {
+    float: left;
+  }
+  .next {
+    float: right;
+  }
+  span {
+    margin-top: 75px;
+  }
+}
+.cs-figure {
+  // display: flex;
+  // flex-direction: row;
+  figure {
+    figcaption {
+      max-width: 750px;
+      margin: auto;
+      font-size: 14px;
+      line-height: 21px;
+      opacity: 0.7;
+    }
+  }
+}

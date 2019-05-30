@@ -46,7 +46,7 @@ defaults:
       layout: "post"
   - scope:
       path: ""
-      type: "case studies"
+      type: "case-studies"
     values:
       layout: "case-studies"
   - scope:

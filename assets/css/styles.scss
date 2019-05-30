@@ -27,6 +27,8 @@ $slant: linear-gradient(-250deg, white 0%, white 65%, $secondary 65%, $secondary
 @import "blog";
 @import "newsletter";
 @import "gallery";
+@import "designs";
+@import "case-studies";
 
 
 
@@ -79,7 +81,7 @@ light mint:
   header .headshot img {
     margin-bottom: 0;
   }
-  .title, .nav {
+  .title, nav {
     width: 100%;
     margin: auto 0;
   }
@@ -182,7 +184,7 @@ light mint:
   .nav {
     flex-wrap: wrap;
   }
-  .nav a {
+  nav a {
     width: 25%;
   }
   .home {
