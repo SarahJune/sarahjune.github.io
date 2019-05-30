@@ -1,12 +1,17 @@
 .case-study {
-  padding-top: 25px;
   figure {
     a {
       background-image: transparent;
     }
   }
+  .hrprimary {
+    margin-bottom: 50px;
+  }
   h4 {
     margin-top: 50px;
+    &:first-of-type {
+      margin-top: 0;
+    }
   }
   .previous {
     float: left;
