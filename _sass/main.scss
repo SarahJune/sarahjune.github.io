@@ -44,6 +44,7 @@ h2 {
 h3 {
   font-size: 32px;
   line-height: 1.5;
+  margin-top: 25px;
   @media screen and (max-width: 500px) {
     font-size: 24px;
   }
@@ -105,6 +106,34 @@ article {
 hr {
   height: 5px;
   border: none;
+}
+.quote {
+  border-top: 1px solid $lightgray;
+  border-bottom: 1px solid $lightgray;
+  padding: 25px;
+  margin-bottom: 16px;
+  color: $primary;
+  font-weight: 100;
+  font-family: "Poppins";
+  text-align: center;
+  max-width: 500px;
+  margin: 100px auto;
+  font-variant: small-caps;
+  p {
+    position: relative;
+    z-index: 99;
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+.before-quote {
+  font-size: 150px;
+  // text-align: left;
+  margin-bottom: -100px;
+  // opacity: .3;
+  position: relative;
+  z-index: 1;
+  color: $primary;
 }
 .hrsecondary {
   background: $secondary;

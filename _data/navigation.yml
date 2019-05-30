@@ -2,13 +2,13 @@
   link: /
   collection: home
   nav: home
-- name: Designs
-  link: /designs
-  collection: designs
-  nav: designs
-# - name: Case Studies
-#   link: /case-studies.html
-#   collection: case-studies
+# - name: Designs
+#   link: /designs
+#   collection: designs
+#   nav: designs
+- name: Work
+  link: /case-studies.html
+  collection: case-studies
 - name: Articles
   link: /blog
   collection: blog
