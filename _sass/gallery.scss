@@ -4,12 +4,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.fg-gallery:after {
-    content: "";
-    /* display: block;
-    clear: both; */
-    flex: auto;
-}
+// .fg-gallery:after {
+//     content: "";
+//     /* display: block;
+//     clear: both; */
+//     flex: auto;
+// }
 .gallery-items {
     cursor: pointer;
     float: left;
@@ -21,9 +21,9 @@
     height: 180px;
     box-shadow: $shadow;
 }
-.gallery-items:last-child {
-  margin-left: 2.5%;
-}
+// .gallery-items:last-child {
+//   margin-left: 2.5%;
+// }
 /* GALLERY COLUMNS */
 .cols-2 .gallery-items {
     width: 49%;
