@@ -7,13 +7,13 @@
 #   collection: designs
 #   nav: designs
 - name: Work
-  link: /case-studies/
+  link: /case-studies
   collection: case-studies
 - name: Articles
-  link: /blog/
+  link: /blog
   collection: blog
   nav: blog
 - name: Contact
-  link: /contact/
+  link: /contact
   collection: contact
   nav: contact
