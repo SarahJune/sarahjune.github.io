@@ -23,6 +23,9 @@
           display: block;
         }
       }
+      h3 {
+        margin-bottom: 25px;
+      }
       .details {
         display: block;
         float: left;
@@ -57,7 +60,7 @@
             animation-fill-mode: forwards;
             animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
     }
-    .projects:nth-of-type(odd) {
+    .projects:nth-of-type(even) {
       background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
       @media screen and (max-width: 800px) {
         background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
@@ -72,7 +75,7 @@
         }
       }
     }
-    .projects:nth-of-type(even) {
+    .projects:nth-of-type(odd) {
       background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
       @media screen and (max-width: 800px) {
         background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
