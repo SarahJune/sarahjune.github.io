@@ -12,3 +12,5 @@ nav: blog
 https://dribbble.com/stories/2019/05/03/8-must-haves-in-your-freelance-design-contract
 
 https://www.truthaboutdesign.com/the-brutal-truth-about-freelancing-as-a-designer/?fbclid=IwAR0q47VyXIq5JRAnzumEpbHz5rSV48PjE46zhQuAdCqTix5zureCM1uygKg
+
+https://medium.com/truthaboutdesign/the-type-of-person-that-succeeds-at-freelancing-2ba7118254b3

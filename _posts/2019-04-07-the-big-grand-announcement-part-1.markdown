@@ -9,7 +9,7 @@ permalink: blog/the-big-grand-announcement-part-1
 nav: blog
 ---
 
-"Tell me, what is it you plan to do with your one wild and precious life?” —&nbsp;<a href="https://www.habitsforwellbeing.com/what-will-you-do-with-your-one-wild-and-precious-life/" target="_blank">Mary Oliver</a>
+"Tell me, what is it you plan to do with your one wild and precious life?” —&nbsp;<a href="https://www.habitsforwellbeing.com/what-will-you-do-with-your-one-wild-and-precious-life/" target="____blank">Mary Oliver</a>
 
 I have some news! (If you’re in a rush, get the [TL;DR](#tldr) here.)
 
@@ -23,7 +23,7 @@ To clarify, I quit my job without having *another* job. I'll be honest, it's not
 
 Hard pass.
 
-Actually, it turns out that—according to <a href="https://www.merriam-webster.com/dictionary/risk-taker" target="_blank">Merriam-Webster</a>—"risk-takers" are people who are "willing to do things that involve danger or risk in order to achieve a goal."
+Actually, it turns out that—according to <a href="https://www.merriam-webster.com/dictionary/risk-taker" target="____blank">Merriam-Webster</a>—"risk-takers" are people who are "willing to do things that involve danger or risk in order to achieve a goal."
 
 Setting and achieving a goal? Now *that* I can get behind.
 
@@ -32,7 +32,7 @@ Setting and achieving a goal? Now *that* I can get behind.
 </figure>
 
 ### So... What's the goal?
-The purpose of this change is to blend the life I want to live with the work I love to do: designing *really* cool things while traveling to interesting places. This means focusing my career solely on design (instead of the mix of design and content creation I was doing before) and pursuing work that is location-independent.
+The purpose of this change is to blend the life I want to live with the work I love to do: design really* cool things and travel to interesting places. This means focusing my career solely on design (instead of the mix of design and marketing I was doing before) and pursuing work that is location-independent.
 
 But I didn't feel I could properly make this change while still in a full-time job. There was a lot of time-intensive work ahead: redesigning my website (tada!), studying all of the tutorials and resources I'd been amassing, and seeking out roles that more closely align with my new goals.
 
@@ -50,8 +50,7 @@ Writing about this change was another step I wanted to take (thanks for being a 
 
 I don’t know exactly what the outcome of this change will look like. There may be an opportunity just around the corner, or I may have years of freelancing ahead of me.
 
-I do know that I’m looking forward to teaming up with some amazing people, traveling to new places, and producing designs that are <a href="https://www.youtube.com/watch?v=NHHEcmZtJvY" target="_blank">really, really ridiculously good looking</a>.
-
+I do know that I’m looking forward to teaming up with some amazing people, traveling to new places, and producing designs that are <a href="https://www.youtube.com/watch?v=NHHEcmZtJvY" target="____blank">really, really ridiculously good looking</a>.
 
 <figure class="halfwidth">
   <img src="{{site.baseurl}}/assets/img/blogimages/blue-steel.gif" alt="Keep Your Eye on the Ball">
