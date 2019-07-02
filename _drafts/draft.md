@@ -37,28 +37,30 @@ Huge facepalm.
 
 This isn't the first time this has happened and unfortunately it is probably not the last.
 
-But believe it or not, these are great learning opportunities. Here are three things I've learned from experiences like this that still make the experience worthwhile.
+But believe it or not, these are great learning opportunities, and I missed one important step that could have saved me time and frustration from the start. Here are three things I've learned from experiences like this that still make the experience worthwhile.
 
 ### Lesson #1: You Probably Dodged A Bullet
 
-Let's be honest: if someone is disrespectful enough to ghost you like this, they were very likely going to be hard to work with. I know it's hard to be counting on that project, and exciting to see things get to the proposal stage, but I'd much rather have the time to pursue better clients and better projects than be stuck pulling my hair out by back communication and disrespect for my time and effort.
+Let's be honest: if someone is disrespectful enough to ghost you like this, they were very likely going to be hard to work with. I know it's hard to be counting on that project, and exciting to see things get to the proposal stage, but I'd much rather have the time to pursue better clients and better projects than be stuck pulling my hair out by bad communication and disrespect for my time.
 
-Other warning signs are clients who:
-* Show up late to meetings
-* Are slow to return emails but who expect an immediate email back from you
-* Call / email with one or several "urgent" issues late at night
-
-You're inevitably going to have clients who need more attention than others, but the more people who work with, the more you'll be able to spot these warning signs early on and at least prepare yourself (and set early expectations with the client), if not pass on the project all together.
+You're inevitably going to have clients who need more attention than others, but the more people you work with, the more you'll be able to spot warning signs early on and at least prepare yourself—and set early expectations with the client—if not pass on the project all together.
 
 ### Lesson #2: Get a Number Up Front
 
-My second mistake was not insisting on knowing what number the client had in mind for the project. In my initial conversations with prospective clients, I always ask what their budget is for the project. But I discovered pretty early on that clients prefer you to do the work and then they can take or pass on the project.
+My big mistake was not insisting on knowing what number the client had in mind for the project.
+
+In my initial conversations with prospective clients, I always ask what their budget is for the project. But I discovered pretty early on that clients prefer you to do the work and then they can take or pass on the project.
 
 Like I mentioned earlier, I really think people just don't realize A) how much time and effort goes into a design project, whether it's a logo or a full website, and B) how much time it takes to put together a proposal.
 
 Now, I am very up front with cost before going too far down the road with a client. I won't even send a proposal unless I know that they've thought about budget and know how much they're willing to spend. I'm going to write a longer post about this soon, but for now, the takeaway is to know that the client has at least thought about price. It shows how serious the are about the project, and how much they value the work that you do.
 
-### Lesson #3: 
+### Lesson #3: Grow from Every Experience
 
+I was pretty annoyed at first, but it's always more beneficial to you to look at the learning opportunity, even for projects you don't land.
 
-Have you been ghosted by a client this far in the process? Let's hear it! <a href="https://twitter.com/sarah_june12" target="____blank">Ping me on Twitter</a> if you can top my story with one of your own.
+When clients ghost, I add some of our interactions (like being late to meetings, dominating the conversation, getting off topic a lot, etc.) to my "yellow flags" list. They don't always mean the client will be hard to work with, but it's helpful to be watching for those signs to tell which clients are going to be harder to work with, so you can prepare (and set some expectations early).
+
+Thanks for reading! I sincerely hope that you don't have to deal with clients ghosting you, but hopefully if it happens, you will be able to see the positives, say, "Dodged that bullet!" and move on to create bad-ass designs for clients who respect your time and value your work.
+
+Do you have a story about being ghosted? Let's hear it! <a href="https://twitter.com/sarah_june12" target="____blank">Ping me on Twitter</a> if you can top my story with one of your own.
