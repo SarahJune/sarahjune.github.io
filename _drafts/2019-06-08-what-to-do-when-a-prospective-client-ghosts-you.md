@@ -3,8 +3,8 @@ title: "What to Do When a Prospective Client Ghosts You"
 date: 2019-05-10
 collection: blog
 author: sarah
-image: what-to-do-when-a-prospective-client-ghosts-you.jpg
-img-credit: https://unsplash.com/photos/ZWKNDOjwito
+image: when-a-prospective-client-ghosts-you.jpg
+img-credit: https://unsplash.com/photos/m4uwUH3UiHs
 permalink: blog/what-to-do-when-a-prospective-client-ghosts-you
 nav: blog
 ---
@@ -42,6 +42,6 @@ Let's be honest: if someone is disrespectful enough to ghost you like this, they
 
 You're inevitably going to have clients who need more attention than others, but the more people you work with, the more you'll be able to spot any warning signs early on to prepare yourself, set early expectations with the client, or perhaps pass on the project all together.
 
-And the only real missed opportunity is the one that you don’t learn from.
+**Plus, the only real missed opportunity is the one that you don’t learn from.**
 
 Do you have a story about being ghosted? Let's hear it! <a href="https://twitter.com/sarah_june12" target="____blank">Ping me on Twitter</a> if you can top my story with one of your own.
