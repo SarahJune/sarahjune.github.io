@@ -1,6 +1,6 @@
 ---
 title: "What to Do When a Prospective Client Ghosts You"
-date: 2019-05-10
+date: 2019-07-9
 collection: blog
 author: sarah
 image: what-to-do-when-a-prospective-client-ghosts-you.jpg
@@ -37,7 +37,7 @@ I’d be lying if I said I wasn’t incredulous.
 
 But this post is supposed to be about *what to do* when this happens.
 
-### So do you do?
+### So what do you do?
 
 As Henry Ford famously said, “The only real mistake is the one from which we learn nothing.”
 
@@ -53,22 +53,22 @@ It’ll save both of you some time if you discuss the project’s budget at the 
 
 If you want to learn more about pricing strategies, I recommend <a href=”https://abookapart.com/products/pricing-design” target=”____blank”>Dan Mall’s ebook</a>.
 
-#### 2. Think back to any red or yellow flags
+#### 2. Think back to any warning signs
 
-You're inevitably going to have clients who need more attention than others, but the more people you work with, the more you'll be able to spot early warning signs.  
+You're inevitably going to have clients who need more attention than others, but sometimes the client is more work and stress than they’re worth. The more people you work with, the more you'll be able to spot early warning signs.  
 
-Here are just some examples of yellow flags I’ve experienced in the initial project conversation:
-The client is late
-The client goes way over the time set for the meeting (most likely because they can’t stay on topic)
-The client does most of the talking (your initial meeting should be a conversation, not a monologue)
-The client mentions having worked with overseas designers*
+Here are just some examples of red flags I’ve experienced in the initial project conversation:
+* The client is late
+* The meeting time goes way over because the client can’t stay on topic
+* The client does most of the talking (your initial meeting should be a conversation, not a monologue)
+* The client mentions having worked with overseas designers*
 
-* *If you’re in the U.S., you’re competing with often very talented designers who have lower cost of living (and therefore, lower pricing) in other parts of the world. You bring value to the project that is worth paying for, but if your client mentions working with designers overseas, they’re going to be used to paying (and therefore, expect) lower rates. This isn’t a deal-breaker, but it’s something to be aware of.*
+* *If you’re in the U.S., you’re competing with often very talented designers who have lower cost of living (and therefore, lower pricing) in other parts of the world. You bring value to the project that is worth paying for, but if your client has worked with designers overseas, they’re going to be used to paying (and therefore, expect) lower rates. This isn’t a deal-breaker, but it’s something to be aware of.*
 
 One or even two of these flags doesn’t mean the project won’t be a good one. But noticing these (and other) signs will help you better prepare for the project and set early expectations with the client. And if you come across too many, perhaps you should consider passing on the project all together.
 
 #### 3. Let it go (you probably dodged a bullet)
 
-Let's be honest: if someone is disrespectful enough to ghost you like this, they were very likely going to be difficult to work with. I know it's hard to be counting on that project only for it to disintegrate, but it’s much better to dedicate that time to pursuing better clients and better projects than to spend several months pulling your hair out because of poor communication, scope creep, or worst of all, a client who goes dark when it’s time to write that final check.
+Let's be honest: if someone is disrespectful enough to ghost you this far in the process, they were very likely going to be difficult to work with. I know it's hard to be counting on that project only for it to disintegrate, but it’s much better to dedicate that time to pursuing better clients and better projects than to spend several months pulling your hair out because of poor communication, scope creep, or worst of all, a client who goes dark when it’s time to write that final check.
 
 Do you have a story about being ghosted or more yellow flags to add to the list? Let's hear them! <a href="https://twitter.com/sarah_june12" target="____blank">Ping me on Twitter</a> if you can top my story with one of your own.
