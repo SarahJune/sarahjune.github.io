@@ -9,3 +9,7 @@
 5. remote job sources
 
 6. advice to anyone starting out (squarespace, etc)
+
+7. collaboration with Rainier Watch
+
+8. 
