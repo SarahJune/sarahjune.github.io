@@ -1,6 +1,6 @@
 ---
 title: "What to Do When a Prospective Client Ghosts You"
-date: 2019-07-9
+date: 2019-07-09
 collection: blog
 author: sarah
 image: when-a-prospective-client-ghosts-you.jpg

@@ -14,7 +14,7 @@ In this article, I'm going to share with you six important principles I've learn
 I had originally called this blog post, "The 6 Rules of Visual Design" but then I realized...
 
 <figure class="halfwidth">
-  <img src="{{site.baseurl}}/assets/img/blogimages/guidelines.gif" alt="Windustries fake company site without much whitespace">
+  <img src="{{site.baseurl}}/assets/img/blogimages/guidelines.gif">
   <figcaption>The most quotable non-Captain Sparrow line from <a href="https://www.imdb.com/title/tt0325980/" target="____blank">Pirates</a>.</figcaption>
 </figure>
 
