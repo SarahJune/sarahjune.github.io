@@ -20,8 +20,8 @@ The design features a retro color palette and illustration of The Mountain (I es
   <figcaption>Rainier Watcher sticker design available in the <a href="https://www.rainierwatch.com/shop/accessories/stickers/rainier-watcher-badge-sticker/" target="____blank">Rainier Watch shop</a>.</figcaption>
 </figure>
 
-The best part of working with the team at Rainier Watch is that a percentage of every sale from their shop is donated to organizations dedicated to supporting Mount Rainier.
+The best part of working with David and the rest of the team at Rainier Watch is that a percentage of every sale from their shop is donated to organizations dedicated to supporting Mount Rainier.
 
 Pop over to their shop to <a href="https://www.rainierwatch.com/shop/accessories/stickers/rainier-watcher-badge-sticker/" target="____blank">get your own Rainier Watcher sticker</a>, plus check out more great designs from local designers on their site.
 
-Huge thank you to the folks at Rainier Watch for the opportunity!
+Huge thank you to David and Rainier Watch for the opportunity!
