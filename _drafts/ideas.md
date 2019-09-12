@@ -12,4 +12,8 @@
 
 7. collaboration with Rainier Watch
 
-8. 
+8. On Weekly Planning
+
+9. On Calibrating
+
+10. On Giving
