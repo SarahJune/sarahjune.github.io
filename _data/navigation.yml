@@ -6,10 +6,13 @@
 #   link: /designs
 #   collection: designs
 #   nav: designs
-- name: Work
+- name: Case Studies
   link: /case-studies
   collection: case-studies
-- name: Articles
+- name: Designs
+  link: /designs
+  collection: designs
+- name: Writings
   link: /blog
   collection: blog
   nav: blog
