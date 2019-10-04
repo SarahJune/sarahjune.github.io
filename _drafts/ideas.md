@@ -10,10 +10,10 @@
 
 6. advice to anyone starting out (squarespace, etc)
 
-7. collaboration with Rainier Watch
-
 8. On Weekly Planning
 
 9. On Calibrating
 
-10. On Giving
+10. On Giving / generosity
+
+11. Must-have apps / browswer plugins for designers (and why i don't use flux, etc) - contrast, whatfont, screencapture,
