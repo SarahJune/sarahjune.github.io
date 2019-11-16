@@ -181,11 +181,12 @@ light mint:
   }
 }
 @media screen and (max-width: 550px) {
-  .nav {
-    flex-wrap: wrap;
+  nav {
+    flex-direction: column;
   }
   nav a {
-    width: 25%;
+    width: 100%;
+    margin: 0;
   }
   .home {
     // flex-direction: column;
