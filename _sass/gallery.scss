@@ -26,6 +26,9 @@
 /* GALLERY COLUMNS */
 .cols-2 .gallery-items {
     width: 46%;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
 }
 .cols-2 .gallery-items:nth-child(2n+2) {
     margin-right: 0;
@@ -117,6 +120,7 @@
     z-index: 9999;
     cursor: pointer;
     box-sizing: border-box;
+    background-color: $primary;
 }
 .gallery-arrow > p {
     transition: all .2s ease;
