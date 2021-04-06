@@ -12,10 +12,10 @@
 - name: Designs
   link: /designs
   collection: designs
-- name: Writings
-  link: /blog
-  collection: blog
-  nav: blog
+# - name: Writings
+#   link: /blog
+#   collection: blog
+#   nav: blog
 - name: Contact
   link: /contact
   collection: contact
